@@ -4,5 +4,4 @@ from instadash.models import User
 class UserSerializer(serializers.ModelSerializer):
     class Meta:
         model = User
-        field='__all__'
-        
+        fields='__all__'
