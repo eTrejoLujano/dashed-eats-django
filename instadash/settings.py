@@ -55,7 +55,7 @@ MIDDLEWARE = [
 ]
 
 CORS_ALLOWED_ORIGINS = [
-    "http://localhost:5174"
+    "http://localhost:5173"
 ]
 
 ROOT_URLCONF = 'instadash.urls'
@@ -84,8 +84,12 @@ WSGI_APPLICATION = 'instadash.wsgi.application'
 
 DATABASES = {
     'default': {
-        'ENGINE': 'django.db.backends.sqlite3',
-        'NAME': BASE_DIR / 'db.sqlite3',
+        'ENGINE': 'django.db.backends.postgresql_psycopg2',
+        'NAME': 'instadash',
+        'USER': 'eriktrejolujano',
+        'PASSWORD': '',
+        'HOST': 'localhost',
+        'PORT': 5432,
     }
 }
 
