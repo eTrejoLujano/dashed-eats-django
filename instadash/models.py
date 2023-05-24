@@ -66,3 +66,10 @@ class Item(models.Model):
 class ItemCart(models.Model):
     item = models.ForeignKey(Item, on_delete=models.CASCADE)
     cart = models.ForeignKey(Cart, on_delete=models.CASCADE)
+
+
+class Ad(models.Model):
+    title = models.CharField(max_length=500)
+    description = models.CharField(max_length=500, null=True)
+    business = models.ForeignKey(Business, on_delete=models.CASCADE, null=True)
+    image = models.ImageField(upload_to='files/ad', null=True)
