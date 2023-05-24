@@ -48,7 +48,7 @@ class Business(models.Model):
     favorite = models.BooleanField(default=False)
     rating_score = models.DecimalField(
         max_digits=2, decimal_places=1, blank=True, null=True)
-    reviews = models.IntegerField(blank=True, null=True)
+    ratings = models.IntegerField(blank=True)
     open_time = models.TimeField()
     close_time = models.TimeField()
     expensive_rating = models.CharField(choices=expensive.choices)
@@ -60,6 +60,7 @@ class Item(models.Model):
     description = models.CharField(max_length=500, null=True)
     products = models.ManyToManyField(Cart, through="ItemCart")
     business = models.ForeignKey(Business, on_delete=models.CASCADE)
+    image = models.ImageField(upload_to='files/item', null=True)
 
 
 class ItemCart(models.Model):
