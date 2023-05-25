@@ -1,5 +1,5 @@
 from django.contrib import admin
-from instadash.models import User, Cart, OrderHistory, Business, Item, ItemCart, Ad
+from instadash.models import User, Cart, OrderHistory, Business, Item, ItemCart, Ad, BusinessAd
 
 admin.site.register(User)
 admin.site.register(Cart)
@@ -8,3 +8,4 @@ admin.site.register(Business)
 admin.site.register(Item)
 admin.site.register(ItemCart)
 admin.site.register(Ad)
+admin.site.register(BusinessAd)

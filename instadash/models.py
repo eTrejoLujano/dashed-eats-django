@@ -71,5 +71,13 @@ class ItemCart(models.Model):
 class Ad(models.Model):
     title = models.CharField(max_length=500)
     description = models.CharField(max_length=500, null=True)
-    business = models.ForeignKey(Business, on_delete=models.CASCADE, null=True)
+    ads = models.ManyToManyField(Business, through="BusinessAd")
     image = models.ImageField(upload_to='files/ad', null=True)
+    bg_color = models.CharField(max_length=255, null=True)
+    border_color = models.CharField(max_length=255, null=True)
+    button_color = models.CharField(max_length=255, null=True)
+
+
+class BusinessAd(models.Model):
+    business = models.ForeignKey(Business, on_delete=models.CASCADE)
+    ad = models.ForeignKey(Ad, on_delete=models.CASCADE)

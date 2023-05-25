@@ -19,5 +19,6 @@ from instadash import views
 
 urlpatterns = [
     path('admin/', admin.site.urls),
-    path('api/users/', views.users, name="users")
+    path('api/users/', views.users, name="users"),
+    path('api/ads/', views.ads, name="ads")
 ]
