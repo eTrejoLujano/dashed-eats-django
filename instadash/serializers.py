@@ -1,14 +1,15 @@
-from rest_framework import serializers
+from rest_framework.serializers import ModelSerializer
 from instadash.models import User, Ad
+# from base.models import User
 
 
-class UserSerializer(serializers.ModelSerializer):
+class UserSerializer(ModelSerializer):
     class Meta:
         model = User
         fields = '__all__'
 
 
-class AdSerializer(serializers.ModelSerializer):
+class AdSerializer(ModelSerializer):
     class Meta:
         model = Ad
         fields = '__all__'

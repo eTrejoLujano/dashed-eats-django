@@ -1,17 +1,47 @@
 from django.db import models
 from django.core.validators import RegexValidator
 from multiselectfield import MultiSelectField
+from django.contrib.auth.models import User
+from django.utils import timezone
+from django.utils.translation import gettext_lazy as _
+from django.contrib.auth.models import AbstractBaseUser, PermissionsMixin
+
+from .managers import CustomUserManager
 
 
-class User(models.Model):
-    first_name = models.CharField(max_length=200)
-    last_name = models.CharField(max_length=200)
-    email = models.EmailField(max_length=200)
-    password = models.CharField(max_length=200)
-    phone_regex = RegexValidator(
-        regex=r'^\+?1?\d{9,15}$', message="Phone number must be entered in the format: '+999999999'. Up to 15 digits allowed.")
-    phone_number = models.CharField(
-        validators=[phone_regex], max_length=17, blank=True)
+class User(AbstractBaseUser, PermissionsMixin):
+    email = models.EmailField(unique=True)
+    first_name = models.CharField(max_length=255, blank=False)
+    last_name = models.CharField(max_length=255, blank=False)
+    is_active = models.BooleanField(default=True)
+    is_staff = models.BooleanField(default=False)
+    is_superuser = models.BooleanField(default=False)
+    date_joined = models.DateTimeField(default=timezone.now)
+    last_login = models.DateTimeField(blank=True, null=True)
+
+    objects = CustomUserManager()
+
+    USERNAME_FIELD = "email"
+    EMAIL_FIELD = 'email'
+    REQUIRED_FIELDS = []
+
+    class Meta:
+        verbose_name = "User"
+        verbose_name_plural = "Users"
+
+    # def get_full_name(self):
+    #     return self.first_name, self.last_name
+
+    # def get_short_name(self):
+    #     return self.first_name
+
+    # def __str__(self):
+    #     return self.email
+
+    # phone_regex = RegexValidator(
+    #     regex=r'^\+?1?\d{9,15}$', message="Phone number must be entered in the format: '+999999999'. Up to 15 digits allowed.")
+    # phone_number = models.CharField(
+    #     validators=[phone_regex], max_length=17, blank=True)
 
 
 class Cart(models.Model):
