@@ -27,7 +27,7 @@ SECRET_KEY = 'django-insecure-(i)-6evl#&-qga@__&)lxy@bgx=cy6*=pnus9^s1hq+7a^+qc2
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = []
+ALLOWED_HOSTS = ["django-env.eba-ank3qwa5.us-west-2.elasticbeanstalk.com"]
 
 
 # Application definition
@@ -38,6 +38,7 @@ INSTALLED_APPS = [
     'instadash',
     'multiselectfield',
     'rest_framework_simplejwt.token_blacklist',
+    'ebhealthcheck.apps.EBHealthCheckConfig',
     'django.contrib.admin',
     'django.contrib.auth',
     'django.contrib.contenttypes',
@@ -106,7 +107,8 @@ MIDDLEWARE = [
 ]
 
 CORS_ALLOWED_ORIGINS = [
-    "http://127.0.0.1:5173"
+    "http://127.0.0.1:5173",
+    "https://instadash.netlify.app"
 ]
 
 ROOT_URLCONF = 'instadash.urls'
@@ -170,7 +172,7 @@ AUTH_PASSWORD_VALIDATORS = [
 
 LANGUAGE_CODE = 'en-us'
 
-TIME_ZONE = 'UTC'
+TIME_ZONE = 'US/Pacific'
 
 USE_I18N = True
 
@@ -181,6 +183,8 @@ USE_TZ = True
 # https://docs.djangoproject.com/en/4.1/howto/static-files/
 
 STATIC_URL = 'static/'
+
+STATIC_ROOT = 'static'
 
 # Default primary key field type
 # https://docs.djangoproject.com/en/4.1/ref/settings/#default-auto-field
