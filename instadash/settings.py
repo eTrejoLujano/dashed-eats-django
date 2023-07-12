@@ -25,7 +25,7 @@ AUTH_USER_MODEL = "instadash.User"
 SECRET_KEY = 'django-insecure-(i)-6evl#&-qga@__&)lxy@bgx=cy6*=pnus9^s1hq+7a^+qc2'
 
 # SECURITY WARNING: don't run with debug turned on in production!
-DEBUG = True
+DEBUG = False
 
 ALLOWED_HOSTS = ['django-env.eba-ank3qwa5.us-west-2.elasticbeanstalk.com']
 
