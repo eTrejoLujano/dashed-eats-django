@@ -12,10 +12,10 @@ https://docs.djangoproject.com/en/4.1/ref/settings/
 
 from datetime import timedelta
 from pathlib import Path
-import environ
 import os
 
-env = environ.Env()
+from dotenv import load_dotenv
+load_dotenv()
 
 # Build paths inside the project like this: BASE_DIR / 'subdir'.
 BASE_DIR = Path(__file__).resolve().parent.parent
@@ -153,9 +153,9 @@ DATABASES = {
     # }
     'default': {
         'ENGINE': 'django.db.backends.postgresql_psycopg2',
-        'NAME': 'postgres',
-        'USER': 'instadash_psql',
-        'PASSWORD': '7pta2Q4Sj3NEu6RU0L1M',
+        'NAME': os.getenv('DB_NAME'),
+        'USER': os.getenv('DB_USER'),
+        'PASSWORD': os.getenv('DB_PASS'),
         'HOST': 'instadash-db.cujnym9h27u6.us-west-2.rds.amazonaws.com',
         'PORT': 5432,
         'DISABLE_SERVER_SIDE_CURSORS': True,
