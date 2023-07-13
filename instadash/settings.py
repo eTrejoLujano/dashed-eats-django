@@ -33,6 +33,7 @@ ALLOWED_HOSTS = ['django-env.eba-ank3qwa5.us-west-2.elasticbeanstalk.com']
 
 SECURE_CROSS_ORIGIN_OPENER_POLICY = None
 
+SESSION_COOKIE_SECURE=False
 
 # Application definition
 
