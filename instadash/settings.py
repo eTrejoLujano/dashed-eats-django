@@ -26,7 +26,7 @@ AUTH_USER_MODEL = "instadash.User"
 # See https://docs.djangoproject.com/en/4.1/howto/deployment/checklist/
 
 # SECURITY WARNING: keep the secret key used in production secret!
-SECRET_KEY = env('SECRET_KEY')
+SECRET_KEY = 'django-insecure-(i)-6evl#&-qga@__&)lxy@bgx=cy6*=pnus9^s1hq+7a^+gr7'
 
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = False
@@ -153,9 +153,9 @@ DATABASES = {
     # }
     'default': {
         'ENGINE': 'django.db.backends.postgresql_psycopg2',
-        'NAME': env('DB_NAME'),
-        'USER': env('DB_USER'),
-        'PASSWORD': env('DB_PASS'),
+        'NAME': 'postgres',
+        'USER': 'instadash_psql',
+        'PASSWORD': '7pta2Q4Sj3NEu6RU0L1M',
         'HOST': 'instadash-db.cujnym9h27u6.us-west-2.rds.amazonaws.com',
         'PORT': 5432,
         'DISABLE_SERVER_SIDE_CURSORS': True,
