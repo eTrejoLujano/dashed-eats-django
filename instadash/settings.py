@@ -26,7 +26,7 @@ AUTH_USER_MODEL = "instadash.User"
 # See https://docs.djangoproject.com/en/4.1/howto/deployment/checklist/
 
 # SECURITY WARNING: keep the secret key used in production secret!
-SECRET_KEY = 'django-insecure-(i)-6evl#&-qga@__&)lxy@bgx=cy6*=pnus9^s1hq+7a^+gr7'
+SECRET_KEY = os.getenv('SECRET_KEY')
 
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = False
