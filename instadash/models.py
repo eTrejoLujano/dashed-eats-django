@@ -40,17 +40,6 @@ class User(AbstractBaseUser, PermissionsMixin):
     # phone_number = models.CharField(
     #     validators=[phone_regex], max_length=17, blank=True)
 
-
-class Cart(models.Model):
-    orders = models.ManyToManyField(User, through="OrderHistory")
-
-
-class OrderHistory(models.Model):
-    user = models.ForeignKey(User, on_delete=models.CASCADE)
-    cart = models.ForeignKey(Cart, on_delete=models.CASCADE)
-    checked_out = models.BooleanField(default=False)
-
-
 class Business(models.Model):
     class expensive(models.TextChoices):
         cheap = '$'
@@ -85,14 +74,14 @@ class Item(models.Model):
     name = models.CharField(max_length=200)
     prices = models.DecimalField(max_digits=6, decimal_places=2)
     description = models.CharField(max_length=500, null=True)
-    products = models.ManyToManyField(Cart, through="ItemCart")
+    # products = models.ManyToManyField(Cart, through="ItemCart")
     business = models.ForeignKey(Business, on_delete=models.CASCADE)
     image = models.ImageField(upload_to='files/item', null=True)
 
-
-class ItemCart(models.Model):
+class Cart(models.Model):
+    user = models.ForeignKey(User, on_delete=models.CASCADE)
     item = models.ForeignKey(Item, on_delete=models.CASCADE)
-    cart = models.ForeignKey(Cart, on_delete=models.CASCADE)
+    isCart = models.BooleanField(default=True)
 
 
 class Ad(models.Model):

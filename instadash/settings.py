@@ -135,12 +135,21 @@ WSGI_APPLICATION = 'instadash.wsgi.application'
 # https://docs.djangoproject.com/en/4.1/ref/settings/#databases
 
 DATABASES = {
+    # 'default': {
+    #     'ENGINE': 'django.db.backends.postgresql_psycopg2',
+    #     'NAME': 'instadash',
+    #     'USER': 'eriktrejolujano',
+    #     'PASSWORD': '',
+    #     'HOST': 'localhost',
+    #     'PORT': 5432,
+    #     'DISABLE_SERVER_SIDE_CURSORS': True,
+    # }
     'default': {
         'ENGINE': 'django.db.backends.postgresql_psycopg2',
-        'NAME': 'instadash',
-        'USER': 'eriktrejolujano',
-        'PASSWORD': '',
-        'HOST': 'localhost',
+        'NAME': 'postgres',
+        'USER': 'instadash_psql',
+        'PASSWORD': 'I2931RGuqf4Bqz9vhGtO',
+        'HOST': 'instadash-db.cujnym9h27u6.us-west-2.rds.amazonaws.com',
         'PORT': 5432,
         'DISABLE_SERVER_SIDE_CURSORS': True,
     }
