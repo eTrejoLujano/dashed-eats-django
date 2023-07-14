@@ -15,7 +15,8 @@ from pathlib import Path
 import os
 
 from dotenv import load_dotenv
-load_dotenv()
+dotenv_path = os.path.join(os.path.dirname(__file__), '.env')
+load_dotenv(dotenv_path)
 
 # Build paths inside the project like this: BASE_DIR / 'subdir'.
 BASE_DIR = Path(__file__).resolve().parent.parent
@@ -153,9 +154,9 @@ DATABASES = {
     # }
     'default': {
         'ENGINE': 'django.db.backends.postgresql_psycopg2',
-        'NAME': 'postgres',
-        'USER': 'instadash_psql',
-        'PASSWORD': 'stj7cRBSpNvKtURTR57b',
+        'NAME': str(os.getenv('DB_NAME')),
+        'USER': str(os.getenv('DB_USER')),
+        'PASSWORD': str(os.getenv('DB_PASS')),
         'HOST': 'instadash-db.cujnym9h27u6.us-west-2.rds.amazonaws.com',
         'PORT': 5432,
         'DISABLE_SERVER_SIDE_CURSORS': True,
