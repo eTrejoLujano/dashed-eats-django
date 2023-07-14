@@ -153,9 +153,9 @@ DATABASES = {
     # }
     'default': {
         'ENGINE': 'django.db.backends.postgresql_psycopg2',
-        'NAME': str(os.getenv('DB_NAME')),
-        'USER': str(os.getenv('DB_USER')),
-        'PASSWORD': str(os.getenv('DB_PASS')),
+        'NAME': str(os.environ.get('DB_NAME')),
+        'USER': str(os.environ.get('DB_USER')),
+        'PASSWORD': str(os.environ.get('DB_PASS')),
         'HOST': 'instadash-db.cujnym9h27u6.us-west-2.rds.amazonaws.com',
         'PORT': 5432,
         'DISABLE_SERVER_SIDE_CURSORS': True,
