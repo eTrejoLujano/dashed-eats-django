@@ -17,6 +17,11 @@ import os
 from dotenv import load_dotenv
 load_dotenv()
 
+import mimetypes
+
+mimetypes.add_type("text/javascript", ".js", True)
+
+
 from pathlib import Path
 import subprocess
 import ast
