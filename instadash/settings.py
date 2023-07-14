@@ -17,6 +17,21 @@ import os
 from dotenv import load_dotenv
 load_dotenv()
 
+from pathlib import Path
+import subprocess
+import ast
+
+
+def get_environ_vars():
+    completed_process = subprocess.run(
+        ['/opt/elasticbeanstalk/bin/get-config', 'environment'],
+        stdout=subprocess.PIPE,
+        text=True,
+        check=True
+    )
+
+    return ast.literal_eval(completed_process.stdout)
+
 # Build paths inside the project like this: BASE_DIR / 'subdir'.
 BASE_DIR = Path(__file__).resolve().parent.parent
 
@@ -141,7 +156,7 @@ WSGI_APPLICATION = 'instadash.wsgi.application'
 # Database
 # https://docs.djangoproject.com/en/4.1/ref/settings/#databases
 
-if 'DB_PASS' in os.environ:
+if 'RDS_DB_NAME' in os.environ:
     DATABASES = {
         # 'default': {
         #     'ENGINE': 'django.db.backends.postgresql_psycopg2',
@@ -154,14 +169,26 @@ if 'DB_PASS' in os.environ:
         # }
         'default': {
             'ENGINE': 'django.db.backends.postgresql_psycopg2',
-            'NAME': os.getenv('DB_NAME'),
-            'USER': os.getenv('DB_USER'),
-            'PASSWORD': os.getenv('DB_PASS'),
+            'NAME': os.environ['RDS_DB_NAME'],
+            'USER': os.environ['RDS_USERNAME'],
+            'PASSWORD': os.environ['RDS_PASSWORD'],
             'HOST': 'instadash-db.cujnym9h27u6.us-west-2.rds.amazonaws.com',
             'PORT': 5432,
-            'DISABLE_SERVER_SIDE_CURSORS': True,
+            # 'DISABLE_SERVER_SIDE_CURSORS': True,
         }
     }
+else: 
+    env_vars = get_environ_vars()
+    DATABASES = {
+            'default': {
+            'ENGINE': 'django.db.backends.mysql',
+            'NAME': env_vars['RDS_DB_NAME'],
+            'USER': env_vars['RDS_USERNAME'],
+            'PASSWORD': env_vars['RDS_PASSWORD'],
+            'HOST': 'instadash-db.cujnym9h27u6.us-west-2.rds.amazonaws.com',
+            'PORT': 5432,
+     }
+ }
 
 
 # Password validation
