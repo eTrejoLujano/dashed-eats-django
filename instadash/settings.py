@@ -181,7 +181,7 @@ if 'RDS_DB_NAME' in os.environ:
             'NAME': os.environ['RDS_DB_NAME'],
             'USER': os.environ['RDS_USERNAME'],
             'PASSWORD': os.environ['RDS_PASSWORD'],
-            'HOST': os.environ['RDS_HOST'],
+            'HOST': os.environ['RDS_HOSTNAME'],
             'PORT': 5432,
         }
     }
@@ -193,7 +193,7 @@ else:
             'NAME': env_vars['RDS_DB_NAME'],
             'USER': env_vars['RDS_USERNAME'],
             'PASSWORD': env_vars['RDS_PASSWORD'],
-            'HOST': env_vars['RDS_HOST'],
+            'HOST': env_vars['RDS_HOSTNAME'],
             'PORT': 5432,
      }
  }
