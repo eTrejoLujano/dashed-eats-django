@@ -189,7 +189,7 @@ else:
     env_vars = get_environ_vars()
     DATABASES = {
             'default': {
-            'ENGINE': 'django.db.backends.mysql',
+            'ENGINE': 'django.db.backends.postgresql_psycopg2',
             'NAME': env_vars['RDS_DB_NAME'],
             'USER': env_vars['RDS_USERNAME'],
             'PASSWORD': env_vars['RDS_PASSWORD'],
