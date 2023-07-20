@@ -162,51 +162,41 @@ WSGI_APPLICATION = 'instadash.wsgi.application'
 # Database
 # https://docs.djangoproject.com/en/4.1/ref/settings/#databases
 
-DATABASES = {
-        'default': {
-            'ENGINE': 'django.db.backends.postgresql_psycopg2',
-            'NAME': 'instadash',
-            'USER': 'eriktrejolujano',
-            'PASSWORD': '',
-            'HOST': 'localhost',
-            'PORT': 5432,
-            'DISABLE_SERVER_SIDE_CURSORS': True,
-        }
-}
-
-# if 'RDS_DB_NAME' in os.environ:
-#     DATABASES = {
-#         # 'default': {
-#         #     'ENGINE': 'django.db.backends.postgresql_psycopg2',
-#         #     'NAME': 'instadash',
-#         #     'USER': 'eriktrejolujano',
-#         #     'PASSWORD': '',
-#         #     'HOST': 'localhost',
-#         #     'PORT': 5432,
-#         #     'DISABLE_SERVER_SIDE_CURSORS': True,
-#         # }
+# DATABASES = {
 #         'default': {
 #             'ENGINE': 'django.db.backends.postgresql_psycopg2',
-#             'NAME': os.environ['RDS_DB_NAME'],
-#             'USER': os.environ['RDS_USERNAME'],
-#             'PASSWORD': os.environ['RDS_PASSWORD'],
-#             'HOST': 'instadash-db.cujnym9h27u6.us-west-2.rds.amazonaws.com',
+#             'NAME': 'instadash',
+#             'USER': 'eriktrejolujano',
+#             'PASSWORD': '',
+#             'HOST': 'localhost',
 #             'PORT': 5432,
-#             # 'DISABLE_SERVER_SIDE_CURSORS': True,
+#             'DISABLE_SERVER_SIDE_CURSORS': True,
 #         }
-#     }
-# else: 
-#     env_vars = get_environ_vars()
-#     DATABASES = {
-#             'default': {
-#             'ENGINE': 'django.db.backends.mysql',
-#             'NAME': env_vars['RDS_DB_NAME'],
-#             'USER': env_vars['RDS_USERNAME'],
-#             'PASSWORD': env_vars['RDS_PASSWORD'],
-#             'HOST': 'instadash-db.cujnym9h27u6.us-west-2.rds.amazonaws.com',
-#             'PORT': 5432,
-#      }
-#  }
+# }
+
+if 'RDS_DB_NAME' in os.environ:
+    DATABASES = {
+        'default': {
+            'ENGINE': 'django.db.backends.postgresql_psycopg2',
+            'NAME': os.environ['RDS_DB_NAME'],
+            'USER': os.environ['RDS_USERNAME'],
+            'PASSWORD': os.environ['RDS_PASSWORD'],
+            'HOST': os.environ['RDS_HOST'],
+            'PORT': 5432,
+        }
+    }
+else: 
+    env_vars = get_environ_vars()
+    DATABASES = {
+            'default': {
+            'ENGINE': 'django.db.backends.mysql',
+            'NAME': env_vars['RDS_DB_NAME'],
+            'USER': env_vars['RDS_USERNAME'],
+            'PASSWORD': env_vars['RDS_PASSWORD'],
+            'HOST': env_vars['RDS_HOST'],
+            'PORT': 5432,
+     }
+ }
 
 
 # Password validation
