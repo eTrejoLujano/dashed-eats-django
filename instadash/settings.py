@@ -183,6 +183,7 @@ if 'RDS_DB_NAME' in os.environ:
             'PASSWORD': os.environ['RDS_PASSWORD'],
             'HOST': 'dashed-eats-db.cujnym9h27u6.us-west-2.rds.amazonaws.com',
             'PORT': 5432,
+            'DISABLE_SERVER_SIDE_CURSORS': True,
         }
     }
 else: 
@@ -195,6 +196,7 @@ else:
             'PASSWORD': env_vars['RDS_PASSWORD'],
             'HOST': 'dashed-eats-db.cujnym9h27u6.us-west-2.rds.amazonaws.com',
             'PORT': 5432,
+            'DISABLE_SERVER_SIDE_CURSORS': True,
      }
  }
 
