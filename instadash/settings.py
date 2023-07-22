@@ -135,7 +135,7 @@ MIDDLEWARE = [
 
 CORS_ALLOWED_ORIGINS = [
     "http://127.0.0.1:5173",
-    "https://instadash.netlify.app"
+    "https://dashedeats.com/"
 ]
 
 ROOT_URLCONF = 'instadash.urls'
