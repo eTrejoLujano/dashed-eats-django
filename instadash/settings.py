@@ -50,7 +50,7 @@ AUTH_USER_MODEL = "instadash.User"
 SECRET_KEY = str(os.getenv('SECRET_KEY'))
 
 # SECURITY WARNING: don't run with debug turned on in production!
-DEBUG = False
+DEBUG = True
 
 ALLOWED_HOSTS = ['dashedeatsdjango.us-west-2.elasticbeanstalk.com', 'react.dashedeatsdjango.com', '127.0.0.1']
 
@@ -135,7 +135,7 @@ MIDDLEWARE = [
 
 CORS_ALLOWED_ORIGINS = [
     "http://127.0.0.1:5173",
-    "https://dashedeats.com/"
+    "https://dashedeats.com"
 ]
 
 ROOT_URLCONF = 'instadash.urls'
@@ -162,43 +162,43 @@ WSGI_APPLICATION = 'instadash.wsgi.application'
 # Database
 # https://docs.djangoproject.com/en/4.1/ref/settings/#databases
 
-# DATABASES = {
-#         'default': {
-#             'ENGINE': 'django.db.backends.postgresql_psycopg2',
-#             'NAME': 'instadash',
-#             'USER': 'eriktrejolujano',
-#             'PASSWORD': '',
-#             'HOST': 'localhost',
-#             'PORT': 5432,
-#             'DISABLE_SERVER_SIDE_CURSORS': True,
-#         }
-# }
-
-if 'RDS_DB_NAME' in os.environ:
-    DATABASES = {
+DATABASES = {
         'default': {
             'ENGINE': 'django.db.backends.postgresql_psycopg2',
-            'NAME': os.environ['RDS_DB_NAME'],
-            'USER': os.environ['RDS_USERNAME'],
-            'PASSWORD': os.environ['RDS_PASSWORD'],
-            'HOST': 'dashed-eats-db.cujnym9h27u6.us-west-2.rds.amazonaws.com',
+            'NAME': 'instadash',
+            'USER': 'eriktrejolujano',
+            'PASSWORD': '',
+            'HOST': 'localhost',
             'PORT': 5432,
             'DISABLE_SERVER_SIDE_CURSORS': True,
         }
-    }
-else: 
-    env_vars = get_environ_vars()
-    DATABASES = {
-            'default': {
-            'ENGINE': 'django.db.backends.postgresql_psycopg2',
-            'NAME': env_vars['RDS_DB_NAME'],
-            'USER': env_vars['RDS_USERNAME'],
-            'PASSWORD': env_vars['RDS_PASSWORD'],
-            'HOST': 'dashed-eats-db.cujnym9h27u6.us-west-2.rds.amazonaws.com',
-            'PORT': 5432,
-            'DISABLE_SERVER_SIDE_CURSORS': True,
-     }
- }
+}
+
+# if 'RDS_DB_NAME' in os.environ:
+#     DATABASES = {
+#         'default': {
+#             'ENGINE': 'django.db.backends.postgresql_psycopg2',
+#             'NAME': os.environ['RDS_DB_NAME'],
+#             'USER': os.environ['RDS_USERNAME'],
+#             'PASSWORD': os.environ['RDS_PASSWORD'],
+#             'HOST': 'dashed-eats-db.cujnym9h27u6.us-west-2.rds.amazonaws.com',
+#             'PORT': 5432,
+#             'DISABLE_SERVER_SIDE_CURSORS': True,
+#         }
+#     }
+# else: 
+#     env_vars = get_environ_vars()
+#     DATABASES = {
+#             'default': {
+#             'ENGINE': 'django.db.backends.postgresql_psycopg2',
+#             'NAME': env_vars['RDS_DB_NAME'],
+#             'USER': env_vars['RDS_USERNAME'],
+#             'PASSWORD': env_vars['RDS_PASSWORD'],
+#             'HOST': 'dashed-eats-db.cujnym9h27u6.us-west-2.rds.amazonaws.com',
+#             'PORT': 5432,
+#             'DISABLE_SERVER_SIDE_CURSORS': True,
+#      }
+#  }
 
 
 # Password validation

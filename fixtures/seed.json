@@ -1,0 +1,38 @@
+[
+  {
+    "model": "instadash.store",
+    "pk": 1,
+    "fields": {
+      "name": "Starbucks",
+      "image": "src/assets/store/starbucks.jpeg",
+      "logo": "src/assets/store/logo/starbuckslogo.png",
+      "open_time": "05:30:00",
+      "close_time": "20:00:00",
+      "expensive_rating": "$"
+    }
+  },
+  {
+    "model": "instadash.store",
+    "pk": 2,
+    "fields": {
+      "name": "Mcdonald's",
+      "image": "src/assets/store/mcdonalds.jpeg",
+      "logo": "src/assets/store/logo/mcdonaldslogo.avif",
+      "open_time": "04:00:00",
+      "close_time": "11:30:00",
+      "expensive_rating": "$"
+    }
+  },
+  {
+    "model": "instadash.store",
+    "pk": 3,
+    "fields": {
+      "name": "Taco Bell",
+      "image": "src/assets/store/tacobell.jpeg",
+      "logo": "src/assets/store/logo/starbuckslogo.png",
+      "open_time": "08:00:00",
+      "close_time": "11:30:00",
+      "expensive_rating": "$$"
+    }
+  }
+]
