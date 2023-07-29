@@ -1,0 +1,14 @@
+[
+  {
+    "model": "instadash.ad",
+    "pk": 1,
+    "fields": {
+      "title": "Save $5 with a Coca-Cola Zero Sugar. On orders $20+",
+      "description": "Dashed Deals. Code: MAGICMEALS",
+      "image": "src/assets/ads/cokecola.png",
+      "bg_color": "bg-black",
+      "border_color": "border-black",
+      "button_color": "bg-red-500"
+    }
+  }
+]

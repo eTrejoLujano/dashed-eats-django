@@ -1,0 +1,50 @@
+[
+  {
+    "model": "instadash.ad",
+    "pk": 1,
+    "fields": {
+      "title": "Save $5 with a Coca-Cola Zero Sugar. On orders $20+",
+      "description": "Dashed Deals. Code: MAGICMEALS",
+      "image": "src/assets/ads/cokecola.png",
+      "bg_color": "bg-black",
+      "border_color": "border-black",
+      "button_color": "bg-red-500"
+    }
+  },
+  {
+    "model": "instadash.ad",
+    "pk": 2,
+    "fields": {
+      "title": "30% off Krispy Kreme Classic Assorted Dozen",
+      "description": "Up to $7 off. Now - 5/31",
+      "image": "src/assets/ads/krispykreme.jpg",
+      "bg_color": "bg-green-900",
+      "border_color": "border-green-900",
+      "button_color": "bg-green-600"
+    }
+  },
+  {
+    "model": "instadash.ad",
+    "pk": 3,
+    "fields": {
+      "title": "Doing too much? Refresh & relax with Extra Refreshers",
+      "description": "Available at select convenience and grocery stores",
+      "image": "src/assets/ads/extra.jpg",
+      "bg_color": "bg-blue-900",
+      "border_color": "border-blue-900",
+      "button_color": "bg-blue-400"
+    }
+  },
+  {
+    "model": "instadash.ad",
+    "pk": 4,
+    "fields": {
+      "title": "Get $3 off your next breakfast order of $15+ at Taco Bell",
+      "description": "From 8am - 11am. Now - 9/14",
+      "image": "src/assets/ads/tacobell.jpeg",
+      "bg_color": "bg-purple-800",
+      "border_color": "border-purple-800",
+      "button_color": "bg-purple-400"
+    }
+  }
+]

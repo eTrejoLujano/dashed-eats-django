@@ -1,0 +1,242 @@
+[
+  {
+    "model": "instadash.store",
+    "pk": 1,
+    "fields": {
+      "name": "Starbucks",
+      "image": "src/assets/store/starbucks.jpeg",
+      "logo": "src/assets/store/logo/starbuckslogo.png",
+      "open_time": "05:30:00",
+      "close_time": "20:00:00",
+      "expensive_rating": "$"
+    }
+  },
+  {
+    "model": "instadash.store",
+    "pk": 2,
+    "fields": {
+      "name": "Mcdonald's",
+      "image": "src/assets/store/mcdonalds.jpeg",
+      "logo": "src/assets/store/logo/mcdonaldslogo.avif",
+      "open_time": "04:00:00",
+      "close_time": "23:30:00",
+      "expensive_rating": "$"
+    }
+  },
+  {
+    "model": "instadash.store",
+    "pk": 3,
+    "fields": {
+      "name": "Taco Bell",
+      "image": "src/assets/store/tacobell.jpeg",
+      "logo": "src/assets/store/logo/tacobelllogo.jpeg",
+      "open_time": "08:00:00",
+      "close_time": "23:30:00",
+      "expensive_rating": "$$"
+    }
+  },
+  {
+    "model": "instadash.store",
+    "pk": 4,
+    "fields": {
+      "name": "Chick-fil-A",
+      "image": "src/assets/store/chickfila.png",
+      "logo": "src/assets/store/logo/chickfilalogo.png",
+      "open_time": "06:30:00",
+      "close_time": "22:30:00",
+      "expensive_rating": "$"
+    }
+  },
+  {
+    "model": "instadash.store",
+    "pk": 5,
+    "fields": {
+      "name": "Wendy's",
+      "image": "src/assets/store/wendys.jpeg",
+      "logo": "src/assets/store/logo/wendyslogo.png",
+      "open_time": "06:30:00",
+      "close_time": "23:00:00",
+      "expensive_rating": "$$"
+    }
+  },
+  {
+    "model": "instadash.store",
+    "pk": 6,
+    "fields": {
+      "name": "Taco Bell",
+      "image": "src/assets/store/tacobell.jpeg",
+      "logo": "src/assets/store/logo/tacobelllogo.png",
+      "open_time": "08:00:00",
+      "close_time": "23:30:00",
+      "expensive_rating": "$$"
+    }
+  },
+  {
+    "model": "instadash.store",
+    "pk": 7,
+    "fields": {
+      "name": "Burger King",
+      "image": "src/assets/store/burgerking.jpeg",
+      "logo": "src/assets/store/logo/burgerkinglogo.png",
+      "open_time": "06:00:00",
+      "close_time": "23:00:00",
+      "expensive_rating": "$"
+    }
+  },
+  {
+    "model": "instadash.store",
+    "pk": 8,
+    "fields": {
+      "name": "Jack in the Box",
+      "image": "src/assets/store/jackinthebox.jpeg",
+      "logo": "src/assets/store/logo/jackintheboxlogo.png",
+      "open_time": "06:00:00",
+      "close_time": "23:00:00",
+      "expensive_rating": "$"
+    }
+  },
+  {
+    "model": "instadash.store",
+    "pk": 9,
+    "fields": {
+      "name": "Panera Bread",
+      "image": "src/assets/store/panerabread.jpeg",
+      "logo": "src/assets/store/logo/panerabreadlogo.png",
+      "open_time": "06:00:00",
+      "close_time": "21:00:00",
+      "expensive_rating": "$$"
+    }
+  },
+  {
+    "model": "instadash.store",
+    "pk": 10,
+    "fields": {
+      "name": "Togo's",
+      "image": "src/assets/store/togos.png",
+      "logo": "src/assets/store/logo/togoslogo.png",
+      "open_time": "10:30:00",
+      "close_time": "21:00:00",
+      "expensive_rating": "$$"
+    }
+  },
+  {
+    "model": "instadash.store",
+    "pk": 11,
+    "fields": {
+      "name": "Dunkin'",
+      "image": "src/assets/store/dunkin.jpeg",
+      "logo": "src/assets/store/logo/dunkinlogo.png",
+      "open_time": "05:00:00",
+      "close_time": "21:00:00",
+      "expensive_rating": "$$"
+    }
+  },
+  {
+    "model": "instadash.store",
+    "pk": 12,
+    "fields": {
+      "name": "Krispy Kreme",
+      "image": "src/assets/store/kriskreme.png",
+      "logo": "src/assets/store/logo/krispykremelogo.png",
+      "open_time": "06:30:00",
+      "close_time": "22:30:00",
+      "expensive_rating": "$$"
+    }
+  },
+  {
+    "model": "instadash.store",
+    "pk": 13,
+    "fields": {
+      "name": "7-Eleven",
+      "image": "src/assets/store/seven11.jpg",
+      "logo": "src/assets/store/logo/sevenelevenlogo.png",
+      "open_time": "00:01:00",
+      "close_time": "23:59:00",
+      "expensive_rating": "$"
+    }
+  },
+  {
+    "model": "instadash.store",
+    "pk": 14,
+    "fields": {
+      "name": "CVS",
+      "image": "src/assets/store/cvs.jpeg",
+      "logo": "src/assets/store/logo/cvslogo.png",
+      "open_time": "08:00:00",
+      "close_time": "22:00:00",
+      "expensive_rating": "$$"
+    }
+  },
+  {
+    "model": "instadash.store",
+    "pk": 15,
+    "fields": {
+      "name": "Rite Aid",
+      "image": "src/assets/store/riteaid.webp",
+      "logo": "src/assets/store/logo/riteaidlogo.png",
+      "open_time": "08:00:00",
+      "close_time": "23:00:00",
+      "expensive_rating": "$$"
+    }
+  },
+  {
+    "model": "instadash.store",
+    "pk": 16,
+    "fields": {
+      "name": "Walgreens",
+      "image": "src/assets/store/walgreens.jpeg",
+      "logo": "src/assets/store/logo/walgreenslogo.png",
+      "open_time": "08:00:00",
+      "close_time": "22:00:00",
+      "expensive_rating": "$$"
+    }
+  },
+  {
+    "model": "instadash.store",
+    "pk": 17,
+    "fields": {
+      "name": "Cardenas",
+      "image": "src/assets/store/cardenas.jpeg",
+      "logo": "src/assets/store/logo/cardenaslogo.png",
+      "open_time": "07:00:00",
+      "close_time": "22:00:00",
+      "expensive_rating": "$$"
+    }
+  },
+  {
+    "model": "instadash.store",
+    "pk": 18,
+    "fields": {
+      "name": "Grocery Outlet",
+      "image": "src/assets/store/groceryoutlet.png",
+      "logo": "src/assets/store/logo/groceryoutletlogo.png",
+      "open_time": "08:00:00",
+      "close_time": "21:00:00",
+      "expensive_rating": "$"
+    }
+  },
+  {
+    "model": "instadash.store",
+    "pk": 19,
+    "fields": {
+      "name": "Safeway",
+      "image": "src/assets/store/safeway.webp",
+      "logo": "src/assets/store/logo/safewaylogo.png",
+      "open_time": "05:00:00",
+      "close_time": "23:30:00",
+      "expensive_rating": "$$"
+    }
+  },
+  {
+    "model": "instadash.store",
+    "pk": 20,
+    "fields": {
+      "name": "Sprouts Farmers Market",
+      "image": "src/assets/store/sprouts.jpeg",
+      "logo": "src/assets/store/logo/sproutslogo.png",
+      "open_time": "07:00:00",
+      "close_time": "22:00:00",
+      "expensive_rating": "$$"
+    }
+  }
+]
