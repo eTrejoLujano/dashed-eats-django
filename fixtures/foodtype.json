@@ -1,18 +1,130 @@
 [
   {
-    "model": "instadash.storead",
+    "model": "instadash.foodtype",
     "pk": 1,
     "fields": {
       "name": "Fast Food",
-      "image": "13"
+      "image": "src/assets/foodtype/fastFood.png"
     }
   },
   {
-    "model": "instadash.storead",
+    "model": "instadash.foodtype",
     "pk": 2,
     "fields": {
-      "name": "1",
-      "image": "13"
+      "name": "Mexican",
+      "image": "src/assets/foodtype/mexican.png"
+    }
+  },
+  {
+    "model": "instadash.foodtype",
+    "pk": 3,
+    "fields": {
+      "name": "Desserts",
+      "image": "src/assets/foodtype/dessert.png"
+    }
+  },
+  {
+    "model": "instadash.foodtype",
+    "pk": 4,
+    "fields": {
+      "name": "Chicken",
+      "image": "src/assets/foodtype/chicken.png"
+    }
+  },
+  {
+    "model": "instadash.foodtype",
+    "pk": 5,
+    "fields": {
+      "name": "Burgers",
+      "image": "src/assets/foodtype/burger.png"
+    }
+  },
+  {
+    "model": "instadash.foodtype",
+    "pk": 6,
+    "fields": {
+      "name": "Soup",
+      "image": "src/assets/foodtype/soup.png"
+    }
+  },
+  {
+    "model": "instadash.foodtype",
+    "pk": 7,
+    "fields": {
+      "name": "Snacks",
+      "image": "src/assets/foodtype/snack.png"
+    }
+  },
+  {
+    "model": "instadash.foodtype",
+    "pk": 8,
+    "fields": {
+      "name": "Pizza",
+      "image": "src/assets/foodtype/pizza.png"
+    }
+  },
+  {
+    "model": "instadash.foodtype",
+    "pk": 9,
+    "fields": {
+      "name": "Drinks",
+      "image": "src/assets/foodtype/drinks.png"
+    }
+  },
+  {
+    "model": "instadash.foodtype",
+    "pk": 10,
+    "fields": {
+      "name": "Sandwiches",
+      "image": "src/assets/foodtype/sandwiches.png"
+    }
+  },
+  {
+    "model": "instadash.foodtype",
+    "pk": 11,
+    "fields": {
+      "name": "Smoothie",
+      "image": "src/assets/foodtype/smoothie.png"
+    }
+  },
+  {
+    "model": "instadash.foodtype",
+    "pk": 12,
+    "fields": {
+      "name": "Coffee",
+      "image": "src/assets/foodtype/coffee.png"
+    }
+  },
+  {
+    "model": "instadash.foodtype",
+    "pk": 13,
+    "fields": {
+      "name": "Healthy",
+      "image": "src/assets/foodtype/healthy.png"
+    }
+  },
+  {
+    "model": "instadash.foodtype",
+    "pk": 14,
+    "fields": {
+      "name": "Breakfast",
+      "image": "src/assets/foodtype/breakfast.png"
+    }
+  },
+  {
+    "model": "instadash.foodtype",
+    "pk": 15,
+    "fields": {
+      "name": "Salad",
+      "image": "src/assets/foodtype/salad.png"
+    }
+  },
+  {
+    "model": "instadash.foodtype",
+    "pk": 16,
+    "fields": {
+      "name": "Italian",
+      "image": "src/assets/foodtype/italian.png"
     }
   }
 ]
