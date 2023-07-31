@@ -36,8 +36,8 @@ class Store(models.Model):
         budget = '$$'
         expensive = '$$$'
     name = models.CharField(max_length=200)
-    image = models.ImageField(upload_to='files/store', null=True)
-    logo = models.ImageField(upload_to='files/store/logo', null=True)
+    image = models.ImageField(upload_to='src/assets/store', null=True)
+    logo = models.ImageField(upload_to='src/assets/store/logo', null=True)
     open_time = models.TimeField()
     close_time = models.TimeField()
     expensive_rating = models.CharField(choices=expensive.choices)
@@ -61,7 +61,7 @@ class Ad(models.Model):
     title = models.CharField(max_length=500)
     description = models.CharField(max_length=500, null=True)
     ads = models.ManyToManyField(Store, through="StoreAd")
-    image = models.ImageField(upload_to='files/ad', null=True)
+    image = models.ImageField(upload_to='src/assets/ads', null=True)
     bg_color = models.CharField(max_length=255, null=True)
     border_color = models.CharField(max_length=255, null=True)
     button_color = models.CharField(max_length=255, null=True)
@@ -79,12 +79,12 @@ class SavedStore(models.Model):
 
 class FoodType(models.Model):
     name = models.CharField(max_length=500)
-    image = models.ImageField(upload_to='files/ad', null=True)
+    image = models.ImageField(upload_to='src/assets/foodtype', null=True)
 
 
 class Category(models.Model):
     name = models.CharField(max_length=500)
-    image = models.ImageField(upload_to='files/ad', null=True)
+    image = models.ImageField(upload_to='src/assets/category', null=True)
 
 
 class Dashboard(models.Model):
