@@ -4,7 +4,7 @@
     "pk": 1,
     "fields": {
       "ad_id": "1",
-      "store_id": "13"
+      "store_id": "12"
     }
   },
   {
@@ -12,7 +12,7 @@
     "pk": 2,
     "fields": {
       "ad_id": "1",
-      "store_id": "14"
+      "store_id": "13"
     }
   },
   {
@@ -20,7 +20,7 @@
     "pk": 3,
     "fields": {
       "ad_id": "1",
-      "store_id": "15"
+      "store_id": "14"
     }
   },
   {
@@ -28,7 +28,7 @@
     "pk": 4,
     "fields": {
       "ad_id": "1",
-      "store_id": "16"
+      "store_id": "15"
     }
   },
   {
@@ -36,7 +36,7 @@
     "pk": 5,
     "fields": {
       "ad_id": "1",
-      "store_id": "17"
+      "store_id": "16"
     }
   },
   {
@@ -44,7 +44,7 @@
     "pk": 6,
     "fields": {
       "ad_id": "1",
-      "store_id": "18"
+      "store_id": "17"
     }
   },
   {
@@ -52,7 +52,7 @@
     "pk": 7,
     "fields": {
       "ad_id": "1",
-      "store_id": "19"
+      "store_id": "18"
     }
   },
   {
@@ -60,7 +60,7 @@
     "pk": 8,
     "fields": {
       "ad_id": "2",
-      "store_id": "12"
+      "store_id": "11"
     }
   },
   {
@@ -68,7 +68,7 @@
     "pk": 9,
     "fields": {
       "ad_id": "3",
-      "store_id": "13"
+      "store_id": "12"
     }
   },
   {
@@ -76,7 +76,7 @@
     "pk": 10,
     "fields": {
       "ad_id": "3",
-      "store_id": "14"
+      "store_id": "13"
     }
   },
   {
@@ -84,7 +84,7 @@
     "pk": 11,
     "fields": {
       "ad_id": "3",
-      "store_id": "15"
+      "store_id": "14"
     }
   },
   {
@@ -92,7 +92,7 @@
     "pk": 12,
     "fields": {
       "ad_id": "3",
-      "store_id": "16"
+      "store_id": "15"
     }
   },
   {
@@ -100,7 +100,7 @@
     "pk": 13,
     "fields": {
       "ad_id": "3",
-      "store_id": "18"
+      "store_id": "17"
     }
   },
   {

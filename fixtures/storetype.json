@@ -1,0 +1,474 @@
+[
+  {
+    "model": "instadash.storetype",
+    "pk": 1,
+    "fields": {
+      "store_id": "2",
+      "foodtype_id": "1"
+    }
+  },
+  {
+    "model": "instadash.storetype",
+    "pk": 2,
+    "fields": {
+      "store_id": "3",
+      "foodtype_id": "1"
+    }
+  },
+  {
+    "model": "instadash.storetype",
+    "pk": 3,
+    "fields": {
+      "store_id": "4",
+      "foodtype_id": "1"
+    }
+  },
+  {
+    "model": "instadash.storetype",
+    "pk": 4,
+    "fields": {
+      "store_id": "5",
+      "foodtype_id": "1"
+    }
+  },
+  {
+    "model": "instadash.storetype",
+    "pk": 5,
+    "fields": {
+      "store_id": "6",
+      "foodtype_id": "1"
+    }
+  },
+  {
+    "model": "instadash.storetype",
+    "pk": 6,
+    "fields": {
+      "store_id": "7",
+      "foodtype_id": "1"
+    }
+  },
+  {
+    "model": "instadash.storetype",
+    "pk": 7,
+    "fields": {
+      "store_id": "8",
+      "foodtype_id": "1"
+    }
+  },
+  {
+    "model": "instadash.storetype",
+    "pk": 8,
+    "fields": {
+      "store_id": "3",
+      "foodtype_id": "2"
+    }
+  },
+  {
+    "model": "instadash.storetype",
+    "pk": 9,
+    "fields": {
+      "store_id": "1",
+      "foodtype_id": "3"
+    }
+  },
+  {
+    "model": "instadash.storetype",
+    "pk": 10,
+    "fields": {
+      "store_id": "2",
+      "foodtype_id": "3"
+    }
+  },
+  {
+    "model": "instadash.storetype",
+    "pk": 11,
+    "fields": {
+      "store_id": "7",
+      "foodtype_id": "3"
+    }
+  },
+  {
+    "model": "instadash.storetype",
+    "pk": 12,
+    "fields": {
+      "store_id": "8",
+      "foodtype_id": "3"
+    }
+  },
+  {
+    "model": "instadash.storetype",
+    "pk": 13,
+    "fields": {
+      "store_id": "10",
+      "foodtype_id": "3"
+    }
+  },
+  {
+    "model": "instadash.storetype",
+    "pk": 14,
+    "fields": {
+      "store_id": "11",
+      "foodtype_id": "3"
+    }
+  },
+  {
+    "model": "instadash.storetype",
+    "pk": 15,
+    "fields": {
+      "store_id": "2",
+      "foodtype_id": "4"
+    }
+  },
+  {
+    "model": "instadash.storetype",
+    "pk": 16,
+    "fields": {
+      "store_id": "3",
+      "foodtype_id": "4"
+    }
+  },
+  {
+    "model": "instadash.storetype",
+    "pk": 17,
+    "fields": {
+      "store_id": "4",
+      "foodtype_id": "4"
+    }
+  },
+  {
+    "model": "instadash.storetype",
+    "pk": 18,
+    "fields": {
+      "store_id": "5",
+      "foodtype_id": "4"
+    }
+  },
+  {
+    "model": "instadash.storetype",
+    "pk": 19,
+    "fields": {
+      "store_id": "6",
+      "foodtype_id": "4"
+    }
+  },
+  {
+    "model": "instadash.storetype",
+    "pk": 20,
+    "fields": {
+      "store_id": "7",
+      "foodtype_id": "4"
+    }
+  },
+  {
+    "model": "instadash.storetype",
+    "pk": 21,
+    "fields": {
+      "store_id": "2",
+      "foodtype_id": "5"
+    }
+  },
+  {
+    "model": "instadash.storetype",
+    "pk": 22,
+    "fields": {
+      "store_id": "5",
+      "foodtype_id": "5"
+    }
+  },
+  {
+    "model": "instadash.storetype",
+    "pk": 23,
+    "fields": {
+      "store_id": "6",
+      "foodtype_id": "5"
+    }
+  },
+  {
+    "model": "instadash.storetype",
+    "pk": 24,
+    "fields": {
+      "store_id": "7",
+      "foodtype_id": "5"
+    }
+  },
+  {
+    "model": "instadash.storetype",
+    "pk": 25,
+    "fields": {
+      "store_id": "8",
+      "foodtype_id": "6"
+    }
+  },
+  {
+    "model": "instadash.storetype",
+    "pk": 26,
+    "fields": {
+      "store_id": "12",
+      "foodtype_id": "7"
+    }
+  },
+  {
+    "model": "instadash.storetype",
+    "pk": 27,
+    "fields": {
+      "store_id": "13",
+      "foodtype_id": "7"
+    }
+  },
+  {
+    "model": "instadash.storetype",
+    "pk": 28,
+    "fields": {
+      "store_id": "14",
+      "foodtype_id": "7"
+    }
+  },
+  {
+    "model": "instadash.storetype",
+    "pk": 29,
+    "fields": {
+      "store_id": "15",
+      "foodtype_id": "7"
+    }
+  },
+  {
+    "model": "instadash.storetype",
+    "pk": 30,
+    "fields": {
+      "store_id": "12",
+      "foodtype_id": "9"
+    }
+  },
+  {
+    "model": "instadash.storetype",
+    "pk": 31,
+    "fields": {
+      "store_id": "13",
+      "foodtype_id": "9"
+    }
+  },
+  {
+    "model": "instadash.storetype",
+    "pk": 32,
+    "fields": {
+      "store_id": "14",
+      "foodtype_id": "9"
+    }
+  },
+  {
+    "model": "instadash.storetype",
+    "pk": 33,
+    "fields": {
+      "store_id": "15",
+      "foodtype_id": "9"
+    }
+  },
+  {
+    "model": "instadash.storetype",
+    "pk": 34,
+    "fields": {
+      "store_id": "2",
+      "foodtype_id": "10"
+    }
+  },
+  {
+    "model": "instadash.storetype",
+    "pk": 35,
+    "fields": {
+      "store_id": "4",
+      "foodtype_id": "10"
+    }
+  },
+  {
+    "model": "instadash.storetype",
+    "pk": 36,
+    "fields": {
+      "store_id": "5",
+      "foodtype_id": "10"
+    }
+  },
+  {
+    "model": "instadash.storetype",
+    "pk": 37,
+    "fields": {
+      "store_id": "6",
+      "foodtype_id": "10"
+    }
+  },
+  {
+    "model": "instadash.storetype",
+    "pk": 38,
+    "fields": {
+      "store_id": "7",
+      "foodtype_id": "10"
+    }
+  },
+  {
+    "model": "instadash.storetype",
+    "pk": 39,
+    "fields": {
+      "store_id": "8",
+      "foodtype_id": "10"
+    }
+  },
+  {
+    "model": "instadash.storetype",
+    "pk": 40,
+    "fields": {
+      "store_id": "9",
+      "foodtype_id": "10"
+    }
+  },
+  {
+    "model": "instadash.storetype",
+    "pk": 41,
+    "fields": {
+      "store_id": "1",
+      "foodtype_id": "11"
+    }
+  },
+  {
+    "model": "instadash.storetype",
+    "pk": 42,
+    "fields": {
+      "store_id": "2",
+      "foodtype_id": "11"
+    }
+  },
+  {
+    "model": "instadash.storetype",
+    "pk": 43,
+    "fields": {
+      "store_id": "8",
+      "foodtype_id": "11"
+    }
+  },
+  {
+    "model": "instadash.storetype",
+    "pk": 44,
+    "fields": {
+      "store_id": "1",
+      "foodtype_id": "12"
+    }
+  },
+  {
+    "model": "instadash.storetype",
+    "pk": 45,
+    "fields": {
+      "store_id": "2",
+      "foodtype_id": "12"
+    }
+  },
+  {
+    "model": "instadash.storetype",
+    "pk": 46,
+    "fields": {
+      "store_id": "8",
+      "foodtype_id": "12"
+    }
+  },
+  {
+    "model": "instadash.storetype",
+    "pk": 47,
+    "fields": {
+      "store_id": "10",
+      "foodtype_id": "12"
+    }
+  },
+  {
+    "model": "instadash.storetype",
+    "pk": 48,
+    "fields": {
+      "store_id": "11",
+      "foodtype_id": "12"
+    }
+  },
+  {
+    "model": "instadash.storetype",
+    "pk": 49,
+    "fields": {
+      "store_id": "12",
+      "foodtype_id": "12"
+    }
+  },
+  {
+    "model": "instadash.storetype",
+    "pk": 50,
+    "fields": {
+      "store_id": "8",
+      "foodtype_id": "13"
+    }
+  },
+  {
+    "model": "instadash.storetype",
+    "pk": 51,
+    "fields": {
+      "store_id": "1",
+      "foodtype_id": "14"
+    }
+  },
+  {
+    "model": "instadash.storetype",
+    "pk": 52,
+    "fields": {
+      "store_id": "2",
+      "foodtype_id": "14"
+    }
+  },
+  {
+    "model": "instadash.storetype",
+    "pk": 53,
+    "fields": {
+      "store_id": "3",
+      "foodtype_id": "14"
+    }
+  },
+  {
+    "model": "instadash.storetype",
+    "pk": 54,
+    "fields": {
+      "store_id": "4",
+      "foodtype_id": "14"
+    }
+  },
+  {
+    "model": "instadash.storetype",
+    "pk": 55,
+    "fields": {
+      "store_id": "6",
+      "foodtype_id": "14"
+    }
+  },
+  {
+    "model": "instadash.storetype",
+    "pk": 56,
+    "fields": {
+      "store_id": "10",
+      "foodtype_id": "14"
+    }
+  },
+  {
+    "model": "instadash.storetype",
+    "pk": 57,
+    "fields": {
+      "store_id": "11",
+      "foodtype_id": "14"
+    }
+  },
+  {
+    "model": "instadash.storetype",
+    "pk": 58,
+    "fields": {
+      "store_id": "2",
+      "foodtype_id": "15"
+    }
+  },
+  {
+    "model": "instadash.storetype",
+    "pk": 59,
+    "fields": {
+      "store_id": "4",
+      "foodtype_id": "15"
+    }
+  }
+]
