@@ -1,14 +1,114 @@
 [
   {
-    "model": "instadash.ad",
+    "model": "instadash.storead",
     "pk": 1,
     "fields": {
-      "title": "Save $5 with a Coca-Cola Zero Sugar. On orders $20+",
-      "description": "Dashed Deals. Code: MAGICMEALS",
-      "image": "src/assets/ads/cokecola.png",
-      "bg_color": "bg-black",
-      "border_color": "border-black",
-      "button_color": "bg-red-500"
+      "ad_id": "1",
+      "store_id": "13"
+    }
+  },
+  {
+    "model": "instadash.storead",
+    "pk": 2,
+    "fields": {
+      "ad_id": "1",
+      "store_id": "14"
+    }
+  },
+  {
+    "model": "instadash.storead",
+    "pk": 3,
+    "fields": {
+      "ad_id": "1",
+      "store_id": "15"
+    }
+  },
+  {
+    "model": "instadash.storead",
+    "pk": 4,
+    "fields": {
+      "ad_id": "1",
+      "store_id": "16"
+    }
+  },
+  {
+    "model": "instadash.storead",
+    "pk": 5,
+    "fields": {
+      "ad_id": "1",
+      "store_id": "17"
+    }
+  },
+  {
+    "model": "instadash.storead",
+    "pk": 6,
+    "fields": {
+      "ad_id": "1",
+      "store_id": "18"
+    }
+  },
+  {
+    "model": "instadash.storead",
+    "pk": 7,
+    "fields": {
+      "ad_id": "1",
+      "store_id": "19"
+    }
+  },
+  {
+    "model": "instadash.storead",
+    "pk": 8,
+    "fields": {
+      "ad_id": "2",
+      "store_id": "12"
+    }
+  },
+  {
+    "model": "instadash.storead",
+    "pk": 9,
+    "fields": {
+      "ad_id": "3",
+      "store_id": "13"
+    }
+  },
+  {
+    "model": "instadash.storead",
+    "pk": 10,
+    "fields": {
+      "ad_id": "3",
+      "store_id": "14"
+    }
+  },
+  {
+    "model": "instadash.storead",
+    "pk": 11,
+    "fields": {
+      "ad_id": "3",
+      "store_id": "15"
+    }
+  },
+  {
+    "model": "instadash.storead",
+    "pk": 12,
+    "fields": {
+      "ad_id": "3",
+      "store_id": "16"
+    }
+  },
+  {
+    "model": "instadash.storead",
+    "pk": 13,
+    "fields": {
+      "ad_id": "3",
+      "store_id": "18"
+    }
+  },
+  {
+    "model": "instadash.storead",
+    "pk": 14,
+    "fields": {
+      "ad_id": "4",
+      "store_id": "3"
     }
   }
 ]

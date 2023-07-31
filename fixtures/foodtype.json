@@ -1,0 +1,18 @@
+[
+  {
+    "model": "instadash.storead",
+    "pk": 1,
+    "fields": {
+      "name": "Fast Food",
+      "image": "13"
+    }
+  },
+  {
+    "model": "instadash.storead",
+    "pk": 2,
+    "fields": {
+      "name": "1",
+      "image": "13"
+    }
+  }
+]
