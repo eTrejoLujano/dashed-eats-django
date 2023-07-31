@@ -1,0 +1,202 @@
+[
+  {
+    "model": "instadash.storetype",
+    "pk": 1,
+    "fields": {
+      "store_id": "1",
+      "dashboard_id": "1"
+    }
+  },
+  {
+    "model": "instadash.storetype",
+    "pk": 1,
+    "fields": {
+      "store_id": "2",
+      "dashboard_id": "1"
+    }
+  },
+  {
+    "model": "instadash.storetype",
+    "pk": 1,
+    "fields": {
+      "store_id": "3",
+      "dashboard_id": "1"
+    }
+  },
+  {
+    "model": "instadash.storetype",
+    "pk": 1,
+    "fields": {
+      "store_id": "4",
+      "dashboard_id": "1"
+    }
+  },
+  {
+    "model": "instadash.storetype",
+    "pk": 1,
+    "fields": {
+      "store_id": "5",
+      "dashboard_id": "1"
+    }
+  },
+  {
+    "model": "instadash.storetype",
+    "pk": 1,
+    "fields": {
+      "store_id": "6",
+      "dashboard_id": "1"
+    }
+  },
+  {
+    "model": "instadash.storetype",
+    "pk": 1,
+    "fields": {
+      "store_id": "7",
+      "dashboard_id": "1"
+    }
+  },
+  {
+    "model": "instadash.storetype",
+    "pk": 1,
+    "fields": {
+      "store_id": "8",
+      "dashboard_id": "1"
+    }
+  },
+  {
+    "model": "instadash.storetype",
+    "pk": 1,
+    "fields": {
+      "store_id": "9",
+      "dashboard_id": "2"
+    }
+  },
+  {
+    "model": "instadash.storetype",
+    "pk": 1,
+    "fields": {
+      "store_id": "10",
+      "dashboard_id": "2"
+    }
+  },
+  {
+    "model": "instadash.storetype",
+    "pk": 1,
+    "fields": {
+      "store_id": "5",
+      "dashboard_id": "2"
+    }
+  },
+  {
+    "model": "instadash.storetype",
+    "pk": 1,
+    "fields": {
+      "store_id": "6",
+      "dashboard_id": "2"
+    }
+  },
+  {
+    "model": "instadash.storetype",
+    "pk": 1,
+    "fields": {
+      "store_id": "4",
+      "dashboard_id": "2"
+    }
+  },
+  {
+    "model": "instadash.storetype",
+    "pk": 1,
+    "fields": {
+      "store_id": "7",
+      "dashboard_id": "2"
+    }
+  },
+  {
+    "model": "instadash.storetype",
+    "pk": 1,
+    "fields": {
+      "store_id": "1",
+      "dashboard_id": "3"
+    }
+  },
+  {
+    "model": "instadash.storetype",
+    "pk": 1,
+    "fields": {
+      "store_id": "10",
+      "dashboard_id": "3"
+    }
+  },
+  {
+    "model": "instadash.storetype",
+    "pk": 1,
+    "fields": {
+      "store_id": "8",
+      "dashboard_id": "3"
+    }
+  },
+  {
+    "model": "instadash.storetype",
+    "pk": 1,
+    "fields": {
+      "store_id": "12",
+      "dashboard_id": "4"
+    }
+  },
+  {
+    "model": "instadash.storetype",
+    "pk": 1,
+    "fields": {
+      "store_id": "13",
+      "dashboard_id": "4"
+    }
+  },
+  {
+    "model": "instadash.storetype",
+    "pk": 1,
+    "fields": {
+      "store_id": "14",
+      "dashboard_id": "4"
+    }
+  },
+  {
+    "model": "instadash.storetype",
+    "pk": 1,
+    "fields": {
+      "store_id": "15",
+      "dashboard_id": "4"
+    }
+  },
+  {
+    "model": "instadash.storetype",
+    "pk": 1,
+    "fields": {
+      "store_id": "16",
+      "dashboard_id": "5"
+    }
+  },
+  {
+    "model": "instadash.storetype",
+    "pk": 1,
+    "fields": {
+      "store_id": "17",
+      "dashboard_id": "5"
+    }
+  },
+  {
+    "model": "instadash.storetype",
+    "pk": 1,
+    "fields": {
+      "store_id": "18",
+      "dashboard_id": "5"
+    }
+  },
+  {
+    "model": "instadash.storetype",
+    "pk": 1,
+    "fields": {
+      "store_id": "19",
+      "dashboard_id": "5"
+    }
+  }
+]

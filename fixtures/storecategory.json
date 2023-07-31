@@ -1,0 +1,130 @@
+[
+  {
+    "model": "instadash.storetype",
+    "pk": 1,
+    "fields": {
+      "store_id": "12",
+      "category_id": "1"
+    }
+  },
+  {
+    "model": "instadash.storetype",
+    "pk": 2,
+    "fields": {
+      "store_id": "16",
+      "category_id": "2"
+    }
+  },
+  {
+    "model": "instadash.storetype",
+    "pk": 3,
+    "fields": {
+      "store_id": "17",
+      "category_id": "2"
+    }
+  },
+  {
+    "model": "instadash.storetype",
+    "pk": 4,
+    "fields": {
+      "store_id": "18",
+      "category_id": "2"
+    }
+  },
+  {
+    "model": "instadash.storetype",
+    "pk": 5,
+    "fields": {
+      "store_id": "19",
+      "category_id": "2"
+    }
+  },
+  {
+    "model": "instadash.storetype",
+    "pk": 6,
+    "fields": {
+      "store_id": "12",
+      "category_id": "3"
+    }
+  },
+  {
+    "model": "instadash.storetype",
+    "pk": 7,
+    "fields": {
+      "store_id": "13",
+      "category_id": "3"
+    }
+  },
+  {
+    "model": "instadash.storetype",
+    "pk": 8,
+    "fields": {
+      "store_id": "14",
+      "category_id": "3"
+    }
+  },
+  {
+    "model": "instadash.storetype",
+    "pk": 9,
+    "fields": {
+      "store_id": "15",
+      "category_id": "3"
+    }
+  },
+  {
+    "model": "instadash.storetype",
+    "pk": 10,
+    "fields": {
+      "store_id": "16",
+      "category_id": "3"
+    }
+  },
+  {
+    "model": "instadash.storetype",
+    "pk": 11,
+    "fields": {
+      "store_id": "17",
+      "category_id": "3"
+    }
+  },
+  {
+    "model": "instadash.storetype",
+    "pk": 12,
+    "fields": {
+      "store_id": "18",
+      "category_id": "3"
+    }
+  },
+  {
+    "model": "instadash.storetype",
+    "pk": 13,
+    "fields": {
+      "store_id": "19",
+      "category_id": "3"
+    }
+  },
+  {
+    "model": "instadash.storetype",
+    "pk": 14,
+    "fields": {
+      "store_id": "14",
+      "category_id": "4"
+    }
+  },
+  {
+    "model": "instadash.storetype",
+    "pk": 15,
+    "fields": {
+      "store_id": "17",
+      "category_id": "4"
+    }
+  },
+  {
+    "model": "instadash.storetype",
+    "pk": 16,
+    "fields": {
+      "store_id": "18",
+      "category_id": "4"
+    }
+  }
+]
