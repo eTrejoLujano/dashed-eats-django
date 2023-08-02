@@ -1,0 +1,1208 @@
+[
+  {
+    "model": "instadash.item",
+    "pk": 1,
+    "fields": {
+      "name": "Starbucks® Cold Brew Coffee",
+      "prices": "4.95",
+      "description": "Handcrafted in small batches daily, slow-steeped in cool water for 20 hours, without touching heat—Starbucks® Cold Brew is made from our custom blend of beans grown to steep long and cold for a super-smooth flavor.",
+      "image": "src/assets/item/starbucks-coldbrew.png",
+      "store_id": "1"
+    }
+  },
+  {
+    "model": "instadash.item",
+    "pk": 2,
+    "fields": {
+      "name": "Strawberry Açaí Lemonade Starbucks® Refreshers Beverage",
+      "prices": "5.65",
+      "description": "Sweet strawberry flavors, passion fruit and açaí notes balanced with the delightful zing of lemonade, served over ice with freeze-dried strawberry pieces. The ultimate pick-me-up your afternoon is calling for.",
+      "image": "src/assets/item/starbucks_strawacai.avif",
+      "store_id": "1"
+    }
+  },
+  {
+    "model": "instadash.item",
+    "pk": 3,
+    "fields": {
+      "name": "White Chocolate Mocha",
+      "prices": "5.75",
+      "description": "Our signature espresso meets white chocolate sauce and steamed milk, and then is finished off with sweetened whipped cream to create this supreme white chocolate delight.",
+      "image": "src/assets/item/starbucks_whitechoc.jpeg",
+      "store_id": "1"
+    }
+  },
+  {
+    "model": "instadash.item",
+    "pk": 4,
+    "fields": {
+      "name": "Caffè Latte",
+      "prices": "4.95",
+      "description": "Our dark, rich espresso balanced with steamed milk and a light layer of foam. A perfect milk-forward warm-up.",
+      "image": "src/assets/item/starbucks_cafelatte.webp",
+      "store_id": "1"
+    }
+  },
+  {
+    "model": "instadash.item",
+    "pk": 5,
+    "fields": {
+      "name": "Birthday Cake Pop",
+      "prices": "3.55",
+      "description": "Bite-sized vanilla cake mixed with vanilla buttercream, dipped in pink chocolaty icing and topped with white sprinkles.",
+      "image": "src/assets/item/starbucks_cakepop.webp",
+      "store_id": "1"
+    }
+  },
+  {
+    "model": "instadash.item",
+    "pk": 6,
+    "fields": {
+      "name": "Butter Croissant",
+      "prices": "4.45",
+      "description": "Classic butter croissant with soft, flaky layers and a golden-brown crust.",
+      "image": "src/assets/item/starbucks_buttercrois.webp",
+      "store_id": "1"
+    }
+  },
+  {
+    "model": "instadash.item",
+    "pk": 7,
+    "fields": {
+      "name": "Big Mac",
+      "prices": "7.06",
+      "description": "Ever wondered what's on a Big Mac®? The McDonald's Big Mac® is a 100% beef burger with a taste like no other. The mouthwatering perfection starts with two 100% pure all beef patties and Big Mac® sauce sandwiched between a sesame seed bun. It’s topped off with pickles, crisp shredded lettuce, finely chopped onion, and a slice of American cheese. It contains no artificial flavors, preservatives, or added colors from artificial sources. Our pickle contains an artificial preservative, so skip it if you like.",
+      "image": "src/assets/item/mcdonalds_bigmac.jpeg",
+      "store_id": "2"
+    }
+  },
+  {
+    "model": "instadash.item",
+    "pk": 8,
+    "fields": {
+      "name": "McChicken",
+      "prices": "3.79",
+      "description": "It’s a classic for a reason. Savor the satisfying crunch of our juicy chicken patty, topped with shredded lettuce and just the right amount of creamy mayonnaise, all served on a perfectly toasted bun.",
+      "image": "src/assets/item/mcdonalds_mcchicken.jpeg",
+      "store_id": "2"
+    }
+  },
+  {
+    "model": "instadash.item",
+    "pk": 9,
+    "fields": {
+      "name": "McDouble",
+      "prices": "3.79",
+      "description": "The classic McDouble® burger stacks two 100% pure beef patties seasoned with just a pinch of salt and pepper. Wondering what the difference is between a McDouble® and a Double Cheeseburger? A slice of cheese! It’s topped with tangy pickles, chopped onions, ketchup, mustard and a melty slice of American cheese. The McDouble® contains no artificial flavors, preservatives or added colors from artificial sources. Our pickle contains an artificial preservative, so skip it if you like.",
+      "image": "src/assets/item/mcdonalds_mcdouble.jpeg",
+      "store_id": "2"
+    }
+  },
+  {
+    "model": "instadash.item",
+    "pk": 10,
+    "fields": {
+      "name": "20 Piece McNuggets",
+      "prices": "7.29",
+      "description": "Enjoy tender, juicy Chicken McNuggets® with your favorite dipping Sauces. Wondering what are McDonald's Chicken Nuggets made of? Chicken McNuggets® are made with all white meat chicken and no artificial colors, flavors, or preservatives.",
+      "image": "src/assets/item/mcdonalds_20piece.jpeg",
+      "store_id": "2"
+    }
+  },
+  {
+    "model": "instadash.item",
+    "pk": 11,
+    "fields": {
+      "name": "French Fries",
+      "prices": "3.79",
+      "description": "McDonald's World Famous Fries® are made with premium potatoes such as the Russet Burbank and the Shepody. With 0g of trans fat per labeled serving, these epic fries are crispy and golden on the outside and fluffy on the inside.",
+      "image": "src/assets/item/mcdonalds_fries.jpeg",
+      "store_id": "2"
+    }
+  },
+  {
+    "model": "instadash.item",
+    "pk": 12,
+    "fields": {
+      "name": "Strawberry Banana Smoothie",
+      "prices": "3.43",
+      "description": "The McCafé® Strawberry Banana Smoothie recipe features the perfect combination of real strawberry and banana fruit purees and juices, blended with creamy low fat yogurt and ice.",
+      "image": "src/assets/item/mcdonalds_strawban.jpeg",
+      "store_id": "2"
+    }
+  },
+  {
+    "model": "instadash.item",
+    "pk": 13,
+    "fields": {
+      "name": "Crunchwrap Supreme",
+      "prices": "6.70",
+      "description": "A flour tortilla layered with seasoned beef, warm nacho cheese sauce, a crispy tostada shell, crispy lettuce, ripe tomatoes and topped with cool sour cream all wrapped in our signature crunchwrap fold and grilled to go.",
+      "image": "src/assets/item/tacobell_crunchwrap.jpeg",
+      "store_id": "3"
+    }
+  },
+  {
+    "model": "instadash.item",
+    "pk": 14,
+    "fields": {
+      "name": "Chicken Quesadilla",
+      "prices": "7.06",
+      "description": "An extra flour tortilla filled with melty three-cheese blend, fire grilled chicken, creamy jalapeño sauce folded and grilled to perfection.",
+      "image": "src/assets/item/tacobell_chxques.jpeg",
+      "store_id": "3"
+    }
+  },
+  {
+    "model": "instadash.item",
+    "pk": 15,
+    "fields": {
+      "name": "Beefy 5-Layer Burrito",
+      "prices": "5.11",
+      "description": "A warm tortilla is covered in a layer of warm nacho cheese and topped with seasoned beef, refried beans, cool sour cream and shredded cheddar cheese. Then it's wrapped creating a layer of nacho cheese all around the outside of the burrito.",
+      "image": "src/assets/item/tacobell_5layer.jpeg",
+      "store_id": "3"
+    }
+  },
+  {
+    "model": "instadash.item",
+    "pk": 16,
+    "fields": {
+      "name": "Nachos BellGrande®",
+      "prices": "7.19",
+      "description": "A portion of crispy tortilla chips topped with warm nacho cheese sauce, refried beans, seasoned beef, ripe tomatoes and cool sour cream.",
+      "image": "src/assets/item/tacobell_nachosbell.jpeg",
+      "store_id": "3"
+    }
+  },
+  {
+    "model": "instadash.item",
+    "pk": 17,
+    "fields": {
+      "name": "Nacho Cheese Doritos® Locos Tacos",
+      "prices": "3.40",
+      "description": "A crunchy taco shell made from Nacho Cheese Doritos® is filled with seasoned beef, crispy lettuce, and pico de gallo.",
+      "image": "src/assets/item/tacobell_locotaco.jpeg",
+      "store_id": "3"
+    }
+  },
+  {
+    "model": "instadash.item",
+    "pk": 18,
+    "fields": {
+      "name": "MTN DEW® Baja Blast® Freeze",
+      "prices": "4.50",
+      "description": "Mountain Dew® Baja Blast in a frozen slushy drink.",
+      "image": "src/assets/item/tacobell_bajablast.jpeg",
+      "store_id": "3"
+    }
+  },
+  {
+    "model": "instadash.item",
+    "pk": 19,
+    "fields": {
+      "name": "Chick-fil-A® Chicken Sandwich",
+      "prices": "7.49",
+      "description": "A boneless breast of chicken seasoned to perfection, freshly breaded, pressure cooked in 100% refined peanut oil and served on a toasted, buttered bun with dill pickle chips. Also available on a multigrain bun.",
+      "image": "src/assets/item/chickfila_chxsandwich.png",
+      "store_id": "4"
+    }
+  },
+  {
+    "model": "instadash.item",
+    "pk": 20,
+    "fields": {
+      "name": "Spicy Chicken Sandwich",
+      "prices": "7.89",
+      "description": "A boneless breast of chicken seasoned with a spicy blend of peppers, freshly breaded, pressure cooked in 100% refined peanut oil and served on a toasted, buttered bun with dill pickle chips. Also available on a multigrain bun.",
+      "image": "src/assets/item/chickfila_spicychxsandwich.png",
+      "store_id": "4"
+    }
+  },
+  {
+    "model": "instadash.item",
+    "pk": 21,
+    "fields": {
+      "name": "Spicy Deluxe Sandwich",
+      "prices": "8.79",
+      "description": "A boneless breast of chicken seasoned with a spicy blend of peppers, hand-breaded, pressure cooked in 100% refined peanut oil and served on a toasted, buttered bun with dill pickle chips, green leaf lettuce, tomato and Pepper Jack Cheese. Gluten-free bun or multigrain bun also available at an additional cost.",
+      "image": "src/assets/item/chickfila_spicydeluxe",
+      "store_id": "4"
+    }
+  },
+  {
+    "model": "instadash.item",
+    "pk": 22,
+    "fields": {
+      "name": "Cobb Salad",
+      "prices": "12.99",
+      "description": "Chick-fil-A® Nuggets, freshly breaded and pressure-cooked, sliced and served on a fresh bed of mixed greens, topped with roasted corn kernels, a blend of shredded Monterey Jack and Cheddar cheeses, crumbled bacon, sliced hard-boiled egg and grape tomatoes. Prepared fresh daily. Served with Charred Tomato and Crispy Red Bell Peppers. Pairs well with Avocado Lime Ranch dressing.",
+      "image": "src/assets/item/chickfila_cobbsalad.png",
+      "store_id": "4"
+    }
+  },
+  {
+    "model": "instadash.item",
+    "pk": 23,
+    "fields": {
+      "name": "Chick-fil-A® Nuggets",
+      "prices": "7.75",
+      "description": "Bite-sized pieces of boneless chicken breast, seasoned to perfection, freshly breaded and pressure cooked in 100% refined peanut oil. Available with choice of dipping sauce.",
+      "image": "src/assets/item/chickfila_nuggets.png",
+      "store_id": "4"
+    }
+  },
+  {
+    "model": "instadash.item",
+    "pk": 24,
+    "fields": {
+      "name": "Frosted Lemonade",
+      "prices": "6.49",
+      "description": "This refreshing treat is a hand-spun combination of Chick-fil-A® Lemonade (or Diet Lemonade) and our signature Icedream® dessert.",
+      "image": "src/assets/item/chickfila_frosted lemonade",
+      "store_id": "4"
+    }
+  },
+  {
+    "model": "instadash.item",
+    "pk": 25,
+    "fields": {
+      "name": "Baconator®",
+      "prices": "13.11",
+      "description": "A half-pound* of fresh beef, American cheese, 6 pieces of crispy Applewood smoked bacon, ketchup, and mayo. Carnivores rejoice!",
+      "image": "src/assets/item/wendys_baconator.png",
+      "store_id": "5"
+    }
+  },
+  {
+    "model": "instadash.item",
+    "pk": 26,
+    "fields": {
+      "name": "Spicy Chicken Sandwich",
+      "prices": "10.49",
+      "description": "A juicy chicken breast marinated and breaded in our unique, fiery blend of peppers and spices to deliver more flavor inside and out, cooled down with crisp lettuce, tomato, and mayo. It’s the original spicy chicken sandwich, and the one you crave.",
+      "image": "src/assets/item/wendys_spicychickensand.png",
+      "store_id": "5"
+    }
+  },
+  {
+    "model": "instadash.item",
+    "pk": 27,
+    "fields": {
+      "name": "French Fries",
+      "prices": "5.36",
+      "description": "Natural-cut, skin-on, sea-salted fries served hot and crispy. The world loves them for a reason.",
+      "image": "src/assets/item/wendys_fries.png",
+      "store_id": "5"
+    }
+  },
+  {
+    "model": "instadash.item",
+    "pk": 28,
+    "fields": {
+      "name": "10 PC. Crispy Chicken Nuggets",
+      "prices": "7.86",
+      "description": "100% white-meat chicken breaded to crispy perfection and served with your choice of 6 dipping sauces including Buttermilk Ranch, BBQ, Sweet & Sour, Honey Mustard, or Ghost Pepper Ranch. They’re trending in our restaurants and Twitter feed alike.",
+      "image": "src/assets/item/wendys_nuggets.jpeg",
+      "store_id": "5"
+    }
+  },
+  {
+    "model": "instadash.item",
+    "pk": 29,
+    "fields": {
+      "name": "Parmesan Caesar Salad",
+      "prices": "12.49",
+      "description": "Made fresh daily with romaine lettuce, grilled chicken breast, Italian cheeses, crunchy Parmesan crisps, and creamy Caesar dressing. One bite will tell you why it’s king of more than just the Romaines.",
+      "image": "src/assets/item/wendys_caesarsalad.png",
+      "store_id": "5"
+    }
+  },
+  {
+    "model": "instadash.item",
+    "pk": 30,
+    "fields": {
+      "name": "Strawberry Lemonade",
+      "prices": "2.61",
+      "description": "Cool off with a blend of real strawberries combined with our All-Natural Lemonade for a refreshing taste. Made with premium squeezed lemons, taste why real ingredients lead to better quality.",
+      "image": "src/assets/item/wendys_strawberrylem.jpeg",
+      "store_id": "5"
+    }
+  },
+  {
+    "model": "instadash.item",
+    "pk": 31,
+    "fields": {
+      "name": "Whopper®",
+      "prices": "9.69",
+      "description": "A ¼ lb* of flame-grilled beef with juicy tomatoes, crisp lettuce, creamy mayonnaise, ketchup, crunchy pickles, and sliced white onions on a toasted sesame seed bun. *Weight based on pre-cooked patty.",
+      "image": "src/assets/item/burgerking_whopper.png",
+      "store_id": "6"
+    }
+  },
+  {
+    "model": "instadash.item",
+    "pk": 32,
+    "fields": {
+      "name": "9 Pc. Chicken Fries",
+      "prices": "4.89",
+      "description": "Breaded, crispy white meat chicken perfect for dipping in any of our delicious dipping sauces.",
+      "image": "src/assets/item/burgerking_chickenfries.jpeg",
+      "store_id": "6"
+    }
+  },
+  {
+    "model": "instadash.item",
+    "pk": 33,
+    "fields": {
+      "name": "Impossible™ Whopper®",
+      "prices": "10.89",
+      "description": "A flame-grilled, plant-based patty with juicy tomatoes, crisp lettuce, creamy mayonnaise, ketchup, crunchy pickles, and sliced white onions on a toasted sesame seed bun. *Patty cooked on the same broiler as beef patties.",
+      "image": "src/assets/item/burgerking_impossible.jpeg",
+      "store_id": "6"
+    }
+  },
+  {
+    "model": "instadash.item",
+    "pk": 34,
+    "fields": {
+      "name": "Whopper® Jr. with Cheese",
+      "prices": "4.79",
+      "description": "One flame-grilled beef patty topped with melty American cheese, juicy tomatoes, crisp lettuce, creamy mayonnaise, ketchup, crunchy pickles, and sliced white onions on a sesame seed bun.",
+      "image": "src/assets/item/burgerking_whopperjr.png",
+      "store_id": "6"
+    }
+  },
+  {
+    "model": "instadash.item",
+    "pk": 35,
+    "fields": {
+      "name": "8 Pc. Fiery Chicken Nuggets",
+      "prices": "3.09",
+      "description": "Burger King’s new Fiery Nuggets start with our classic white meat chicken nuggets, tossed in a spicy glaze for added flavor and heat!",
+      "image": "src/assets/item/burgerking_fierynuggets.jpeg",
+      "store_id": "6"
+    }
+  },
+  {
+    "model": "instadash.item",
+    "pk": 36,
+    "fields": {
+      "name": "Frozen Coke®",
+      "prices": "1.19",
+      "description": "The great taste of Coca-Cola® in a refreshing frozen drink.",
+      "image": "src/assets/item/burgerking_frozencoke.png",
+      "store_id": "6"
+    }
+  },
+  {
+    "model": "instadash.item",
+    "pk": 37,
+    "fields": {
+      "name": "Jumbo Jack®",
+      "prices": "4.36",
+      "description": "100% beef seasoned as it grills, lettuce, tomato, pickles, onions, ketchup & mayo on a buttery bakery bun. *Jumbo isn't one of those ironic nicknames.",
+      "image": "src/assets/item/jack_jumbojack.png",
+      "store_id": "7"
+    }
+  },
+  {
+    "model": "instadash.item",
+    "pk": 38,
+    "fields": {
+      "name": "Jack's Spicy Chicken® w/ Cheese",
+      "prices": "8.11",
+      "description": "100% all white meat spicy crispy chicken fillet with melty Swiss style cheese, tomato, lettuce & mayo on a toasted buttery bakery bun. Yes, please.",
+      "image": "src/assets/item/jack_spicychxcheese.jpeg",
+      "store_id": "7"
+    }
+  },
+  {
+    "model": "instadash.item",
+    "pk": 39,
+    "fields": {
+      "name": "Jr. Jumbo Jack® Cheeseburger",
+      "prices": "3.61",
+      "description": "Anywhere else this Jr. Jack would be senior. Because there is nothing junior about this honest-to-goodness 100% beef patty seasoned as it grills topped with American cheese, tomato, pickle, lettuce, and chopped onions--with the just-right amount of ketchup and real mayonnaise. But here? It's got some growing up to do.",
+      "image": "src/assets/item/jack_jrjumbo.jpeg",
+      "store_id": "7"
+    }
+  },
+  {
+    "model": "instadash.item",
+    "pk": 40,
+    "fields": {
+      "name": "Jumbo Breakfast Platter w/ Bacon",
+      "prices": "6.86",
+      "description": "Scrambled eggs, hash browns, 8 mini pancakes, and 3 slices of hickory smoked bacon. Tell your stomach to make room. Pronto.",
+      "image": "src/assets/item/jack_breakfastplatter.jepg",
+      "store_id": "7"
+    }
+  },
+  {
+    "model": "instadash.item",
+    "pk": 41,
+    "fields": {
+      "name": "Loaded Breakfast Sandwich",
+      "prices": "6.99",
+      "description": "Freshly cracked eggs, hickory smoked bacon, grilled ham, grilled sausage & melty American cheese on toasted sourdough bread. Boom, loaded.",
+      "image": "src/assets/item/jack_loadedbreakfast.jpeg",
+      "store_id": "7"
+    }
+  },
+  {
+    "model": "instadash.item",
+    "pk": 42,
+    "fields": {
+      "name": "Strawberry Red Daze Red Bull Infusion w/ Red Bull® Energy",
+      "prices": "6.24",
+      "description": "A refreshing & energizing iced beverage infused with mixed berry flavors. Made to order with Red Bull® Energy Drink. *Contains Artificial Flavors*",
+      "image": "src/assets/item/jack_strawberyyreddaze.jpeg",
+      "store_id": "7"
+    }
+  },
+  {
+    "model": "instadash.item",
+    "pk": 43,
+    "fields": {
+      "name": "Chipotle Chicken Avocado Melt",
+      "prices": "10.99",
+      "description": "Smoked, pulled chicken raised without antibiotics, smoked Gouda, fresh avocado and cilantro, zesty sweet Peppadew™ peppers and chipotle sauce on Black Pepper Focaccia. Allergens: Contains Wheat, Milk, Egg",
+      "image": "src/assets/item/panera_avosandwich.avif",
+      "store_id": "8"
+    }
+  },
+  {
+    "model": "instadash.item",
+    "pk": 44,
+    "fields": {
+      "name": "Homestyle Chicken Noodle Soup",
+      "prices": "10.39",
+      "description": "Tender pieces of white-meat chicken simmered in a rich, perfectly seasoned homestyle chicken bone broth with curly egg noodles, sliced carrots, celery and herbs. Allergens: Contains Wheat, Egg",
+      "image": "src/assets/item/panera_chickensoup.jpeg",
+      "store_id": "8"
+    }
+  },
+  {
+    "model": "instadash.item",
+    "pk": 45,
+    "fields": {
+      "name": "Strawberry Poppyseed Salad with Chicken",
+      "prices": "16.59",
+      "description": "Chicken raised without antibiotics, romaine, mandarin oranges and fresh strawberries, blueberries and pineapple tossed in poppyseed dressing and topped with toasted pecan pieces.",
+      "image": "src/assets/item/panera_stawpoppysalad.jpeg",
+      "store_id": "8"
+    }
+  },
+  {
+    "model": "instadash.item",
+    "pk": 46,
+    "fields": {
+      "name": "Strawberry Banana Smoothie",
+      "prices": "7.29",
+      "description": "A mix of fruit purees and juice concentrates, blended with a banana and plain Greek yogurt and ice.",
+      "image": "src/assets/item/panera_strawsmoothie.jpeg",
+      "store_id": "8"
+    }
+  },
+  {
+    "model": "instadash.item",
+    "pk": 47,
+    "fields": {
+      "name": "Broccoli Cheddar Soup",
+      "prices": "8.49",
+      "description": "Chopped broccoli, shredded carrots and select seasonings simmered in a velvety smooth cheese sauce.",
+      "image": "src/assets/item/panera_brocccheddar.jpeg",
+      "store_id": "8"
+    }
+  },
+  {
+    "model": "instadash.item",
+    "pk": 48,
+    "fields": {
+      "name": "Pepperoni Flatbread Pizza",
+      "prices": "14.59",
+      "description": "Thick sliced Pepperoni, fresh mozzarella and our shredded Fontina and mozzarella cheese blend with tomato bell pepper sauce on our flatbread.",
+      "image": "src/assets/item/panera_pepperoni.jpeg",
+      "store_id": "8"
+    }
+  },
+  {
+    "model": "instadash.item",
+    "pk": 49,
+    "fields": {
+      "name": "#9 Hot Pastrami",
+      "prices": "14.35",
+      "description": "1/4 lb. of West Coast pastrami with yellow mustard. Served TOGO'S Style",
+      "image": "src/assets/item/togos_pastrami.avif",
+      "store_id": "9"
+    }
+  },
+  {
+    "model": "instadash.item",
+    "pk": 50,
+    "fields": {
+      "name": "#24 Turkey & Avocado",
+      "prices": "11.95",
+      "description": "1/4 lb. of whole breast turkey & fresh avocados. Served TOGO'S Style",
+      "image": "src/assets/item/togos_turkeyavocado.avif",
+      "store_id": "9"
+    }
+  },
+  {
+    "model": "instadash.item",
+    "pk": 51,
+    "fields": {
+      "name": "#3 Turkey & Cheddar",
+      "prices": "11.10",
+      "description": "1/4 lb. of whole breast turkey & cheddar. Served TOGO'S Style, hot or cold",
+      "image": "src/assets/item/togos_turkeychedd.avif",
+      "store_id": "9"
+    }
+  },
+  {
+    "model": "instadash.item",
+    "pk": 52,
+    "fields": {
+      "name": "#26 Turkey, Ham & Cheddar",
+      "prices": "11.10",
+      "description": "1/4 lb. combination of premium meats. Served TOGO'S Style, hot or cold",
+      "image": "src/assets/item/togos_tukeryhamchedd.avif",
+      "store_id": "9"
+    }
+  },
+  {
+    "model": "instadash.item",
+    "pk": 53,
+    "fields": {
+      "name": "Santa Fe Chicken Salad",
+      "prices": "15.00",
+      "description": "Avocado, tomatoes, black bean & corn salsa, cheddar cheese, tortilla strips & pepitas dressing.",
+      "image": "src/assets/item/togos_santafesalad.avif",
+      "store_id": "9"
+    }
+  },
+  {
+    "model": "instadash.item",
+    "pk": 54,
+    "fields": {
+      "name": "Cookies",
+      "prices": "2.40",
+      "description": "Chocolate chunk & peanut butter, individually wrapped",
+      "image": "src/assets/item/togos_cookies.jpeg",
+      "store_id": "9"
+    }
+  },
+  {
+    "model": "instadash.item",
+    "pk": 55,
+    "fields": {
+      "name": "Half Dozen Donuts",
+      "prices": "12.86",
+      "description": "Share the joy by bringing people together with an assortment of half dozen or dozen donuts made in these delicious varieties*: Glazed, Double Chocolate, Strawberry Frosted, Vanilla Frosted, Chocolate Frosted, Old Fashioned, Boston Kreme, Glazed Chocolate Cake, Powdered, Vanilla Creme, Glazed Blueberry, and Jelly.",
+      "image": "src/assets/item/dunkin_halfdozen.webp",
+      "store_id": "10"
+    }
+  },
+  {
+    "model": "instadash.item",
+    "pk": 56,
+    "fields": {
+      "name": "Dozen Donuts",
+      "prices": "21.86",
+      "description": "Share the joy by bringing people together with an assortment of half dozen or dozen donuts made in these delicious varieties*: Glazed, Double Chocolate, Strawberry Frosted, Vanilla Frosted, Chocolate Frosted, Old Fashioned, Boston Kreme, Glazed Chocolate Cake, Powdered, Vanilla Creme, Glazed Blueberry, and Jelly.",
+      "image": "src/assets/item/dunkin_dozendonuts.jpeg",
+      "store_id": "10"
+    }
+  },
+  {
+    "model": "instadash.item",
+    "pk": 57,
+    "fields": {
+      "name": "Iced Latte",
+      "prices": "6.23",
+      "description": "Made with milk and blended with our rich espresso, our Iced Latte is the perfect balance of cool, creamy and smooth to get you goin'.",
+      "image": "src/assets/item/dunkin_icedlatte.png",
+      "store_id": "10"
+    }
+  },
+  {
+    "model": "instadash.item",
+    "pk": 58,
+    "fields": {
+      "name": "Original Blend Iced Coffee",
+      "prices": "4.61",
+      "description": "Freshly brewed and full of flavor, our Iced Coffee is the perfect pick-me-up any time of day or night, giving you the boost you need to keep on running.",
+      "image": "src/assets/item/dunkin_originaliceblend.jpeg",
+      "store_id": "10"
+    }
+  },
+  {
+    "model": "instadash.item",
+    "pk": 59,
+    "fields": {
+      "name": "Cold Brew",
+      "prices": "5.36",
+      "description": "An ultra-smooth, full-bodied coffee like no other. Craft-brewed in small batches. Limited quantities available daily.",
+      "image": "src/assets/item/dunkin_coldbrew.png",
+      "store_id": "10"
+    }
+  },
+  {
+    "model": "instadash.item",
+    "pk": 60,
+    "fields": {
+      "name": "Iced Cappuccino",
+      "prices": "6.11",
+      "description": "Our Iced Cappuccino is brewed with freshly ground espresso beans and then blended with milk served over ice for a refreshing cup of frothy and bold deliciousness.",
+      "image": "src/assets/item/dunkin_icedcapp.png",
+      "store_id": "10"
+    }
+  },
+  {
+    "model": "instadash.item",
+    "pk": 61,
+    "fields": {
+      "name": "Classic Assorted Dozen",
+      "prices": "26.99",
+      "description": "An assortment of our classic doughnuts, selected just for you.",
+      "image": "src/assets/item/krispy_dozen.webp",
+      "store_id": "11"
+    }
+  },
+  {
+    "model": "instadash.item",
+    "pk": 62,
+    "fields": {
+      "name": "Original Glazed® Dozen",
+      "prices": "24.29",
+      "description": "A dozen of our iconic Original Glazed®doughnuts",
+      "image": "src/assets/item/krispy_glazedozen.png",
+      "store_id": "11"
+    }
+  },
+  {
+    "model": "instadash.item",
+    "pk": 63,
+    "fields": {
+      "name": "Coffee Brew Box",
+      "prices": "29.69",
+      "description": "96 ounces of fresh brewed coffee. Your Brew Box will arrive with 10 cups, lids, sleeves and stir sticks. 20 creamers and sugars and 10 Splenda® sweeteners.",
+      "image": "src/assets/item/krispy_brewbox.png",
+      "store_id": "11"
+    }
+  },
+  {
+    "model": "instadash.item",
+    "pk": 64,
+    "fields": {
+      "name": "Specialty Dozen with M&M'S®",
+      "prices": "29.69",
+      "description": "Specialty Dozen made with M&M’S® Contains: 4 Chocolate Iced Doughnut topped with M&M’S®4 Peanut Butter Kreme™ Filled Doughnut topped with M&M’S®4 Original Glazed® Doughnuts.",
+      "image": "src/assets/item/krispy_mmsdonuts.png",
+      "store_id": "11"
+    }
+  },
+  {
+    "model": "instadash.item",
+    "pk": 65,
+    "fields": {
+      "name": "16 Count Assorted Minis",
+      "prices": "32.39",
+      "description": "This assortment features 16 of our mini doughnuts. Each box includes 4 Strawberry Iced minis with sprinkles, 4 chocolate iced minis topped with M&M's®, 4 of our traditional chocolate iced minis, & 4 Original Glazed® minis.",
+      "image": "src/assets/item/krispy_minidonuts.jpeg",
+      "store_id": "11"
+    }
+  },
+  {
+    "model": "instadash.item",
+    "pk": 66,
+    "fields": {
+      "name": "Minute Maid Orange Juice",
+      "prices": "3.59",
+      "description": "Minute Maid Orange Juice",
+      "image": "src/assets/item/krispy_orangejuice.png",
+      "store_id": "11"
+    }
+  },
+  {
+    "model": "instadash.item",
+    "pk": 67,
+    "fields": {
+      "name": "Big Gulp Pepsi Soda Cup (30 oz)",
+      "prices": "2.39",
+      "image": "src/assets/item/seven11_biggulp.jpeg",
+      "store_id": "12"
+    }
+  },
+  {
+    "model": "instadash.item",
+    "pk": 68,
+    "fields": {
+      "name": "7-Select Mango Juice (23.9 oz)",
+      "prices": "1.69",
+      "image": "src/assets/item/seven11_mango.jpeg",
+      "store_id": "12"
+    }
+  },
+  {
+    "model": "instadash.item",
+    "pk": 69,
+    "fields": {
+      "name": "Munchies Snack Mix Flamin Hot (3.25 oz)",
+      "prices": "2.89",
+      "image": "src/assets/item/seven11_munchies.jpeg",
+      "store_id": "12"
+    }
+  },
+  {
+    "model": "instadash.item",
+    "pk": 70,
+    "fields": {
+      "name": "White Claw Hard Seltzer Variety (12 oz x 12 ct)",
+      "prices": "23.09",
+      "image": "src/assets/item/seven11_whiteclaw.jpeg",
+      "store_id": "12"
+    }
+  },
+  {
+    "model": "instadash.item",
+    "pk": 71,
+    "fields": {
+      "name": "Taco & Cheese Taquito",
+      "prices": "2.49",
+      "image": "src/assets/item/seven11_tacocheese.jpeg",
+      "store_id": "12"
+    }
+  },
+  {
+    "model": "instadash.item",
+    "pk": 72,
+    "fields": {
+      "name": "Kellogg's Cheez-It Duoz Sharp Cheddar & Parmesan Baked Snack Crackers (4.3 oz)",
+      "prices": "3.29",
+      "image": "src/assets/item/seven11_cheezit.jpeg",
+      "store_id": "12"
+    }
+  },
+  {
+    "model": "instadash.item",
+    "pk": 73,
+    "fields": {
+      "name": "Haagen-Dazs Dulce De Leche Ice Cream (14 oz)",
+      "prices": "7.29",
+      "image": "src/assets/item/cvs_icecream.jpeg",
+      "store_id": "13"
+    }
+  },
+  {
+    "model": "instadash.item",
+    "pk": 74,
+    "fields": {
+      "name": "Tide Liquid Laundry Detergent Plus Febreze Freshness Spring & Renewal (37 oz)",
+      "prices": "8.29",
+      "image": "src/assets/item/cvs_tide.jpeg",
+      "store_id": "13"
+    }
+  },
+  {
+    "model": "instadash.item",
+    "pk": 75,
+    "fields": {
+      "name": "Lysol Disinfecting Wipes Crisp Linen Scent (35 ct)",
+      "prices": "5.99",
+      "image": "src/assets/item/cvs_lysolwipes.jpeg",
+      "store_id": "13"
+    }
+  },
+  {
+    "model": "instadash.item",
+    "pk": 76,
+    "fields": {
+      "name": "Jose Cuervo Strawberry Lime Margarita Mix (1 L)",
+      "prices": "5.49",
+      "image": "src/assets/item/cvs_cuervomix.webp",
+      "store_id": "13"
+    }
+  },
+  {
+    "model": "instadash.item",
+    "pk": 77,
+    "fields": {
+      "name": "Q Mixers Cocktail Mixers Bold & Spicy Cans (7.5 oz x 4 ct)",
+      "prices": "5.49",
+      "image": "src/assets/item/cvs_qmixers.jpeg",
+      "store_id": "13"
+    }
+  },
+  {
+    "model": "instadash.item",
+    "pk": 78,
+    "fields": {
+      "name": "Reed's Extra Ginger Beer Bottles (12 oz x 4 ct)",
+      "prices": "5.99",
+      "image": "src/assets/item/cvs_gingerbeer.jpeg",
+      "store_id": "13"
+    }
+  },
+  {
+    "model": "instadash.item",
+    "pk": 79,
+    "fields": {
+      "name": "Charmin Ultra Strong Bathroom Tissue 2 Ply 286 Sheets Per Mega Roll (6 ct)",
+      "prices": "11.75",
+      "image": "src/assets/item/rite_toiletpaper.jpeg",
+      "store_id": "14"
+    }
+  },
+  {
+    "model": "instadash.item",
+    "pk": 80,
+    "fields": {
+      "name": "Chips Ahoy! Chewy Chocolate Chip Cookies (13 oz)",
+      "prices": "5.25",
+      "image": "src/assets/item/rite_chipsahoy.jpeg",
+      "store_id": "14"
+    }
+  },
+  {
+    "model": "instadash.item",
+    "pk": 81,
+    "fields": {
+      "name": "AriZona Mucho Mango Fruit Juice Cocktail (23 oz)",
+      "prices": "1.05",
+      "image": "src/assets/item/rite_arizona.webp",
+      "store_id": "14"
+    }
+  },
+  {
+    "model": "instadash.item",
+    "pk": 82,
+    "fields": {
+      "name": "Coke Original Soda Can (16 oz)",
+      "prices": "1.80",
+      "image": "src/assets/item/rite_coke.webp",
+      "store_id": "14"
+    }
+  },
+  {
+    "model": "instadash.item",
+    "pk": 83,
+    "fields": {
+      "name": "Seagram's Malt Beverage Variety Pack Bottle (11.2 oz x 12 ct)",
+      "prices": "17.99",
+      "image": "src/assets/item/rite_seagrams.jpeg",
+      "store_id": "14"
+    }
+  },
+  {
+    "model": "instadash.item",
+    "pk": 84,
+    "fields": {
+      "name": "Cook's California Champagne Brut (1.5 L)",
+      "prices": "13.49",
+      "image": "src/assets/item/rite_champagne.jpeg",
+      "store_id": "14"
+    }
+  },
+  {
+    "model": "instadash.item",
+    "pk": 85,
+    "fields": {
+      "name": "Vanity Fair Extra Absorbent Napkins White (80 ct)",
+      "prices": "4.79",
+      "image": "src/assets/item/walgreens_napkins.avif",
+      "store_id": "15"
+    }
+  },
+  {
+    "model": "instadash.item",
+    "pk": 86,
+    "fields": {
+      "name": "Clorox Fresh Scent Disinfecting Wipes (75 ct)",
+      "prices": "6.99",
+      "image": "src/assets/item/walgreens_clorox.jpeg",
+      "store_id": "15"
+    }
+  },
+  {
+    "model": "instadash.item",
+    "pk": 87,
+    "fields": {
+      "name": "Oreo Double Stuf Sandwich Cookies Chocolate (15.35 oz)",
+      "prices": "6.29",
+      "image": "src/assets/item/walgreens_oreo.avif",
+      "store_id": "15"
+    }
+  },
+  {
+    "model": "instadash.item",
+    "pk": 88,
+    "fields": {
+      "name": "Coca-Cola Soda Bottle (20 oz)",
+      "prices": "2.99",
+      "image": "src/assets/item/walgreens_coca.avif",
+      "store_id": "15"
+    }
+  },
+  {
+    "model": "instadash.item",
+    "pk": 89,
+    "fields": {
+      "name": "Fairlife 2% Reduced Fat Milk (52 oz)",
+      "prices": "5.49",
+      "image": "src/assets/item/walgreens_fairlife.avif",
+      "store_id": "15"
+    }
+  },
+  {
+    "model": "instadash.item",
+    "pk": 90,
+    "fields": {
+      "name": "Pop Secret Microwave Popcorn Movie Theater Butter (3.2 oz x 3 ct)",
+      "prices": "3.99",
+      "image": "src/assets/item/walgreens_popsecret.avif",
+      "store_id": "15"
+    }
+  },
+  {
+    "model": "instadash.item",
+    "pk": 91,
+    "fields": {
+      "name": "Bimbo Bread Soft White",
+      "prices": "3.20",
+      "image": "src/assets/item/cardenas_bimbo.jpeg",
+      "store_id": "16"
+    }
+  },
+  {
+    "model": "instadash.item",
+    "pk": 92,
+    "fields": {
+      "name": "Juanita's Mexican Style Hominy Original",
+      "prices": "6.10",
+      "image": "src/assets/item/cardenas_juanitas.png",
+      "store_id": "16"
+    }
+  },
+  {
+    "model": "instadash.item",
+    "pk": 93,
+    "fields": {
+      "name": "La Michoacana Cool Stix Bolis Pops Variety Pack",
+      "prices": "11.50",
+      "image": "src/assets/item/cardenas_michoacana.webp",
+      "store_id": "16"
+    }
+  },
+  {
+    "model": "instadash.item",
+    "pk": 94,
+    "fields": {
+      "name": "Marinela Barritas de Fresa Fruit Bar Strawberry Filled",
+      "prices": "5.40",
+      "image": "src/assets/item/cardenas_barritas.jpeg",
+      "store_id": "16"
+    }
+  },
+  {
+    "model": "instadash.item",
+    "pk": 95,
+    "fields": {
+      "name": "Modelo Especial Mexican Lager Beer Bottle",
+      "prices": "16.99",
+      "image": "src/assets/item/cardenas_modelo.jpeg",
+      "store_id": "16"
+    }
+  },
+  {
+    "model": "instadash.item",
+    "pk": 96,
+    "fields": {
+      "name": "Pacifico Clara Mexican Lager Bottles",
+      "prices": "15.99",
+      "image": "src/assets/item/cardenas_pacifico.jpeg",
+      "store_id": "16"
+    }
+  },
+  {
+    "model": "instadash.item",
+    "pk": 97,
+    "fields": {
+      "name": "Lindsey's Gold Cafe Free Grade AA Eggs Large",
+      "prices": "4.05",
+      "image": "src/assets/item/grocery_eggs.jpeg",
+      "store_id": "17"
+    }
+  },
+  {
+    "model": "instadash.item",
+    "pk": 98,
+    "fields": {
+      "name": "Bolis Ice Sticks Assorted Fruit Flavors",
+      "prices": "2.90",
+      "image": "src/assets/item/grocery_bolis.webp",
+      "store_id": "17"
+    }
+  },
+  {
+    "model": "instadash.item",
+    "pk": 99,
+    "fields": {
+      "name": "FatBoy Ice Cream Sundae Caramel Pretzel",
+      "prices": "4.60",
+      "image": "src/assets/item/grocery_fatboy.webp",
+      "store_id": "17"
+    }
+  },
+  {
+    "model": "instadash.item",
+    "pk": 100,
+    "fields": {
+      "name": "Jimmy Dean Croissant Sandwiches Sausage Egg & Cheese",
+      "prices": "12.10",
+      "image": "src/assets/item/grocery_croissant.webp",
+      "store_id": "17"
+    }
+  },
+  {
+    "model": "instadash.item",
+    "pk": 101,
+    "fields": {
+      "name": "Coke Can (12 oz x 12 ct)",
+      "prices": "8.65",
+      "image": "src/assets/item/grocery_coke12.webp",
+      "store_id": "17"
+    }
+  },
+  {
+    "model": "instadash.item",
+    "pk": 102,
+    "fields": {
+      "name": "Cathedral Creek California Cabernet Sauvignon",
+      "prices": "6.79",
+      "image": "src/assets/item/grocery_wine.webp",
+      "store_id": "17"
+    }
+  },
+  {
+    "model": "instadash.item",
+    "pk": 103,
+    "fields": {
+      "name": "Angel Soft 2 Ply Mega Rolls Toilet Paper (16 ct)",
+      "prices": "15.40",
+      "image": "src/assets/item/safeway_toiletpaper.jpeg",
+      "store_id": "18"
+    }
+  },
+  {
+    "model": "instadash.item",
+    "pk": 104,
+    "fields": {
+      "name": "Hot Pockets Premium Pepperoni Pizza Sandwiches (12 ct)",
+      "prices": "14.30",
+      "image": "src/assets/item/safeway_hotpockets.jpeg",
+      "store_id": "18"
+    }
+  },
+  {
+    "model": "instadash.item",
+    "pk": 105,
+    "fields": {
+      "name": "Kellogg's Froot Loops Cereal (10.1 oz)",
+      "prices": "5.50",
+      "image": "src/assets/item/safeway_cereal.webp",
+      "store_id": "18"
+    }
+  },
+  {
+    "model": "instadash.item",
+    "pk": 106,
+    "fields": {
+      "name": "Chips Ahoy! Chewy Cookies Chocolate Chip Party Size (26 oz)",
+      "prices": "7.70",
+      "image": "src/assets/item/safeway_cookies.webp",
+      "store_id": "18"
+    }
+  },
+  {
+    "model": "instadash.item",
+    "pk": 107,
+    "fields": {
+      "name": "Jose Cuervo Especial Silver Tequila (1.75 L)",
+      "prices": "29.89",
+      "image": "src/assets/item/safeway_tequila.jpeg",
+      "store_id": "18"
+    }
+  },
+  {
+    "model": "instadash.item",
+    "pk": 108,
+    "fields": {
+      "name": "High Noon Hard Seltzer Can Variety Pack (12 oz x 8 ct)",
+      "prices": "21.84",
+      "image": "src/assets/item/safeway_highnoon.jpeg",
+      "store_id": "18"
+    }
+  },
+  {
+    "model": "instadash.item",
+    "pk": 109,
+    "fields": {
+      "name": "Sprouts Cage Free Grade A Large Eggs (18 ct)",
+      "prices": "5.79",
+      "image": "src/assets/item/sprouts_eggs.avif",
+      "store_id": "19"
+    }
+  },
+  {
+    "model": "instadash.item",
+    "pk": 110,
+    "fields": {
+      "name": "Good Foods Avocado Mash with Sea Salt and Black Pepper",
+      "prices": "5.65",
+      "image": "src/assets/item/sprouts_avocadosmash.webp",
+      "store_id": "19"
+    }
+  },
+  {
+    "model": "instadash.item",
+    "pk": 111,
+    "fields": {
+      "name": "Annie's Homegrown Organic Cheddar Bunnies Baked Snack Crackers (7.5 oz)",
+      "prices": "5.65",
+      "image": "src/assets/item/sprouts_cheddar.jpeg",
+      "store_id": "19"
+    }
+  },
+  {
+    "model": "instadash.item",
+    "pk": 112,
+    "fields": {
+      "name": "Sensible Portions Garden Veggie Straws Sea Salt Vegetable & Potato Snack (5 oz)",
+      "prices": "4.50",
+      "image": "src/assets/item/sprouts_veggie.jpeg",
+      "store_id": "19"
+    }
+  },
+  {
+    "model": "instadash.item",
+    "pk": 113,
+    "fields": {
+      "name": "Diana's Bananas Milk Chocolate Banana Halves (2.3 oz x 4 ct)",
+      "prices": "6.80",
+      "image": "src/assets/item/sprouts_banana.webp",
+      "store_id": "19"
+    }
+  },
+  {
+    "model": "instadash.item",
+    "pk": 114,
+    "fields": {
+      "name": "Flying Embers Organic Margarita Variety Pack Cans (12 oz x 6 ct)",
+      "prices": "10.99",
+      "image": "src/assets/item/sprouts_margarita.webp",
+      "store_id": "19"
+    }
+  }
+]

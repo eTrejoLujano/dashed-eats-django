@@ -48,7 +48,7 @@ class Item(models.Model):
     prices = models.DecimalField(max_digits=6, decimal_places=2)
     description = models.CharField(max_length=500, null=True)
     store = models.ForeignKey(Store, on_delete=models.CASCADE)
-    image = models.ImageField(upload_to='files/item', null=True)
+    image = models.ImageField(upload_to='src/assets/items', null=True)
 
 
 class Cart(models.Model):

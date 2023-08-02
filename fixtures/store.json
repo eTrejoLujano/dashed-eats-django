@@ -99,7 +99,7 @@
     "model": "instadash.store",
     "pk": 9,
     "fields": {
-      "name": "Togo's",
+      "name": "TOGO's Sandwiches",
       "image": "src/assets/store/togos.png",
       "logo": "src/assets/store/logo/togoslogo.png",
       "open_time": "10:30:00",
@@ -183,7 +183,7 @@
     "model": "instadash.store",
     "pk": 16,
     "fields": {
-      "name": "Cardenas",
+      "name": "Cardenas Markets",
       "image": "src/assets/store/cardenas.jpeg",
       "logo": "src/assets/store/logo/cardenaslogo.png",
       "open_time": "07:00:00",
