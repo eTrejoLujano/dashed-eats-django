@@ -1,6 +1,6 @@
 [
   {
-    "model": "instadash.storetype",
+    "model": "instadash.storecategory",
     "pk": 1,
     "fields": {
       "store_id": "12",
@@ -8,7 +8,7 @@
     }
   },
   {
-    "model": "instadash.storetype",
+    "model": "instadash.storecategory",
     "pk": 2,
     "fields": {
       "store_id": "16",
@@ -16,7 +16,7 @@
     }
   },
   {
-    "model": "instadash.storetype",
+    "model": "instadash.storecategory",
     "pk": 3,
     "fields": {
       "store_id": "17",
@@ -24,7 +24,7 @@
     }
   },
   {
-    "model": "instadash.storetype",
+    "model": "instadash.storecategory",
     "pk": 4,
     "fields": {
       "store_id": "18",
@@ -32,7 +32,7 @@
     }
   },
   {
-    "model": "instadash.storetype",
+    "model": "instadash.storecategory",
     "pk": 5,
     "fields": {
       "store_id": "19",
@@ -40,7 +40,7 @@
     }
   },
   {
-    "model": "instadash.storetype",
+    "model": "instadash.storecategory",
     "pk": 6,
     "fields": {
       "store_id": "12",
@@ -48,7 +48,7 @@
     }
   },
   {
-    "model": "instadash.storetype",
+    "model": "instadash.storecategory",
     "pk": 7,
     "fields": {
       "store_id": "13",
@@ -56,7 +56,7 @@
     }
   },
   {
-    "model": "instadash.storetype",
+    "model": "instadash.storecategory",
     "pk": 8,
     "fields": {
       "store_id": "14",
@@ -64,7 +64,7 @@
     }
   },
   {
-    "model": "instadash.storetype",
+    "model": "instadash.storecategory",
     "pk": 9,
     "fields": {
       "store_id": "15",
@@ -72,7 +72,7 @@
     }
   },
   {
-    "model": "instadash.storetype",
+    "model": "instadash.storecategory",
     "pk": 10,
     "fields": {
       "store_id": "16",
@@ -80,7 +80,7 @@
     }
   },
   {
-    "model": "instadash.storetype",
+    "model": "instadash.storecategory",
     "pk": 11,
     "fields": {
       "store_id": "17",
@@ -88,7 +88,7 @@
     }
   },
   {
-    "model": "instadash.storetype",
+    "model": "instadash.storecategory",
     "pk": 12,
     "fields": {
       "store_id": "18",
@@ -96,7 +96,7 @@
     }
   },
   {
-    "model": "instadash.storetype",
+    "model": "instadash.storecategory",
     "pk": 13,
     "fields": {
       "store_id": "19",
@@ -104,7 +104,7 @@
     }
   },
   {
-    "model": "instadash.storetype",
+    "model": "instadash.storecategory",
     "pk": 14,
     "fields": {
       "store_id": "14",
@@ -112,7 +112,7 @@
     }
   },
   {
-    "model": "instadash.storetype",
+    "model": "instadash.storecategory",
     "pk": 15,
     "fields": {
       "store_id": "17",
@@ -120,7 +120,7 @@
     }
   },
   {
-    "model": "instadash.storetype",
+    "model": "instadash.storecategory",
     "pk": 16,
     "fields": {
       "store_id": "18",

@@ -1,5 +1,5 @@
 from rest_framework.serializers import ModelSerializer, EmailField, ValidationError, CharField
-from instadash.models import User, Ad
+from instadash.models import User, Ad, Store, FoodType, Item, Dashboard, Category
 from rest_framework.validators import UniqueValidator
 from django.contrib.auth.password_validation import validate_password
 
@@ -49,6 +49,12 @@ class RegisterSerializer(ModelSerializer):
 
 
 class AdSerializer(ModelSerializer):
+    class Meta:
+        model = Ad
+        fields = '__all__'
+
+
+class Serializer(ModelSerializer):
     class Meta:
         model = Ad
         fields = '__all__'

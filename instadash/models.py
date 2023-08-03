@@ -38,6 +38,7 @@ class Store(models.Model):
     name = models.CharField(max_length=200)
     image = models.ImageField(upload_to='src/assets/store', null=True)
     logo = models.ImageField(upload_to='src/assets/store/logo', null=True)
+    users = models.ManyToManyField(User, through="SavedStore")
     open_time = models.TimeField()
     close_time = models.TimeField()
     expensive_rating = models.CharField(choices=expensive.choices)
@@ -46,7 +47,8 @@ class Store(models.Model):
 class Item(models.Model):
     name = models.CharField(max_length=200)
     prices = models.DecimalField(max_digits=6, decimal_places=2)
-    description = models.CharField(max_length=500, null=True)
+    description = models.CharField(max_length=4000, null=True)
+    users = models.ManyToManyField(User, through="Cart")
     store = models.ForeignKey(Store, on_delete=models.CASCADE)
     image = models.ImageField(upload_to='src/assets/items', null=True)
 
@@ -60,7 +62,7 @@ class Cart(models.Model):
 class Ad(models.Model):
     title = models.CharField(max_length=500)
     description = models.CharField(max_length=500, null=True)
-    ads = models.ManyToManyField(Store, through="StoreAd")
+    stores = models.ManyToManyField(Store, through="StoreAd")
     image = models.ImageField(upload_to='src/assets/ads', null=True)
     bg_color = models.CharField(max_length=255, null=True)
     border_color = models.CharField(max_length=255, null=True)
@@ -80,15 +82,18 @@ class SavedStore(models.Model):
 class FoodType(models.Model):
     name = models.CharField(max_length=500)
     image = models.ImageField(upload_to='src/assets/foodtype', null=True)
+    stores = models.ManyToManyField(Store, through="StoreType")
 
 
 class Category(models.Model):
     name = models.CharField(max_length=500)
     image = models.ImageField(upload_to='src/assets/category', null=True)
+    stores = models.ManyToManyField(Store, through="StoreCategory")
 
 
 class Dashboard(models.Model):
     name = models.CharField(max_length=500)
+    stores = models.ManyToManyField(Store, through="StoreDashboard")
 
 
 class StoreType(models.Model):
