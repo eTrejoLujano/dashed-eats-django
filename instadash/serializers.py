@@ -1,5 +1,5 @@
 from rest_framework.serializers import ModelSerializer, EmailField, ValidationError, CharField
-from instadash.models import User, Ad, Store, FoodType, Item, Dashboard, Category
+from instadash.models import User, Ad, Store, FoodType, Item, Dashboard, Category, StoreAd, StoreDashboard, SavedStore
 from rest_framework.validators import UniqueValidator
 from django.contrib.auth.password_validation import validate_password
 
@@ -48,13 +48,62 @@ class RegisterSerializer(ModelSerializer):
         return user
 
 
+class SavedStoreSerializer(ModelSerializer):
+    users_info = UserSerializer(source='user')
+
+    class Meta:
+        model = SavedStore
+        fields = '__all__'
+
+
+class StoreSerializer(ModelSerializer):
+    saved_store = SavedStoreSerializer(source='savedstore_set', many=True)
+
+    class Meta:
+        model = Store
+        fields = '__all__'
+
+
+class StoreAdSerializer(ModelSerializer):
+    stores_info = StoreSerializer(source='store')
+
+    class Meta:
+        model = StoreAd
+        fields = ['stores_info']
+
+
 class AdSerializer(ModelSerializer):
+    store_ad = StoreAdSerializer(source='storead_set', many=True)
+
     class Meta:
         model = Ad
         fields = '__all__'
 
 
-class Serializer(ModelSerializer):
+class StoreDashSerializer(ModelSerializer):
+    stores_info = StoreSerializer(source='store')
+
     class Meta:
-        model = Ad
+        model = StoreDashboard
+        fields = ['stores_info']
+
+
+class DashSerializer(ModelSerializer):
+    store_dashboard = StoreDashSerializer(
+        source='storedashboard_set', many=True)
+
+    class Meta:
+        model = Dashboard
+        fields = '__all__'
+
+
+class CategorySerializer(ModelSerializer):
+    class Meta:
+        model = Category
+        fields = '__all__'
+
+
+class FoodTypeSerializer(ModelSerializer):
+    class Meta:
+        model = FoodType
         fields = '__all__'

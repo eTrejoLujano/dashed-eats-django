@@ -10,6 +10,9 @@ For the full list of settings and their values, see
 https://docs.djangoproject.com/en/4.1/ref/settings/
 """
 
+import ast
+import subprocess
+import mimetypes
 from datetime import timedelta
 from pathlib import Path
 import os
@@ -17,15 +20,9 @@ import os
 from dotenv import load_dotenv
 load_dotenv()
 
-import mimetypes
 
 # mimetypes.add_type("text/javascript", ".js", True)
 mimetypes.add_type("text/css", ".css", True)
-
-
-from pathlib import Path
-import subprocess
-import ast
 
 
 def get_environ_vars():
@@ -37,6 +34,7 @@ def get_environ_vars():
     )
 
     return ast.literal_eval(completed_process.stdout)
+
 
 # Build paths inside the project like this: BASE_DIR / 'subdir'.
 BASE_DIR = Path(__file__).resolve().parent.parent
@@ -52,11 +50,14 @@ SECRET_KEY = str(os.getenv('SECRET_KEY'))
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = ['dashedeatsdjango.us-west-2.elasticbeanstalk.com', 'react.dashedeatsdjango.com', '127.0.0.1']
+ALLOWED_HOSTS = ['dashedeatsdjango.us-west-2.elasticbeanstalk.com',
+                 'react.dashedeatsdjango.com', '127.0.0.1']
 
 SECURE_CROSS_ORIGIN_OPENER_POLICY = None
 
-SESSION_COOKIE_SECURE=False
+SESSION_COOKIE_SECURE = False
+
+CSRF_COOKIE_SECURE = True
 
 # Application definition
 
@@ -163,15 +164,15 @@ WSGI_APPLICATION = 'instadash.wsgi.application'
 # https://docs.djangoproject.com/en/4.1/ref/settings/#databases
 
 DATABASES = {
-        'default': {
-            'ENGINE': 'django.db.backends.postgresql_psycopg2',
-            'NAME': 'instadash',
-            'USER': 'eriktrejolujano',
-            'PASSWORD': '',
-            'HOST': 'localhost',
-            'PORT': 5432,
-            'DISABLE_SERVER_SIDE_CURSORS': True,
-        }
+    'default': {
+        'ENGINE': 'django.db.backends.postgresql_psycopg2',
+        'NAME': 'instadash',
+        'USER': 'eriktrejolujano',
+        'PASSWORD': '',
+        'HOST': 'localhost',
+        'PORT': 5432,
+        'DISABLE_SERVER_SIDE_CURSORS': True,
+    }
 }
 
 # if 'RDS_DB_NAME' in os.environ:
@@ -186,7 +187,7 @@ DATABASES = {
 #             'DISABLE_SERVER_SIDE_CURSORS': True,
 #         }
 #     }
-# else: 
+# else:
 #     env_vars = get_environ_vars()
 #     DATABASES = {
 #             'default': {

@@ -29,7 +29,7 @@
     "fields": {
       "name": "Taco Bell",
       "image": "src/assets/store/tacobell.jpeg",
-      "logo": "src/assets/store/logo/tacobelllogo.jpeg",
+      "logo": "src/assets/store/logo/tacobelllogo.png",
       "open_time": "08:00:00",
       "close_time": "23:30:00",
       "expensive_rating": "$$"

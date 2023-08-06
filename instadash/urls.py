@@ -18,5 +18,14 @@ urlpatterns = [
 
     path('api/users/', views.users, name="users"),
     path('api/ads/', views.ads, name="ads"),
-    path('api/routes/', views.getRoutes, name='routes')
+    path('api/routes/', views.getRoutes, name='routes'),
+
+    path('api/storeads/', views.getStoreAds, name='storeads'),
+    path('api/dashboard/', views.getDashStores, name='dashboard'),
+
+    path('api/categories/', views.getCategories, name='categories'),
+    path('api/foodtype/', views.getFoodType, name='foodtype'),
+
+    path('api/store/', views.getStore, name='store')
+
 ]
