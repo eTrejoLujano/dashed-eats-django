@@ -56,8 +56,23 @@ class SavedStoreSerializer(ModelSerializer):
         fields = '__all__'
 
 
+class ItemSerializer(ModelSerializer):
+    class Meta:
+        model = Item
+        fields = '__all__'
+
+
+class SavedStoreSerializer(ModelSerializer):
+    users_info = UserSerializer(source='user')
+
+    class Meta:
+        model = SavedStore
+        fields = '__all__'
+
+
 class StoreSerializer(ModelSerializer):
     saved_store = SavedStoreSerializer(source='savedstore_set', many=True)
+    store_items = ItemSerializer(source='item_set', many=True)
 
     class Meta:
         model = Store
