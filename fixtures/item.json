@@ -6,7 +6,7 @@
       "name": "Starbucks® Cold Brew Coffee",
       "prices": "4.95",
       "description": "Handcrafted in small batches daily, slow-steeped in cool water for 20 hours, without touching heat—Starbucks® Cold Brew is made from our custom blend of beans grown to steep long and cold for a super-smooth flavor.",
-      "image": "src/assets/item/starbucks-coldbrew.png",
+      "image": "src/assets/item/starbucks_coldbrew.avif",
       "store_id": "1"
     }
   },
@@ -28,7 +28,7 @@
       "name": "White Chocolate Mocha",
       "prices": "5.75",
       "description": "Our signature espresso meets white chocolate sauce and steamed milk, and then is finished off with sweetened whipped cream to create this supreme white chocolate delight.",
-      "image": "src/assets/item/starbucks_whitechoc.jpeg",
+      "image": "src/assets/item/starbucks_whitechoc.avif",
       "store_id": "1"
     }
   },

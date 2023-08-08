@@ -1,4 +1,4 @@
-from instadash.models import User, Ad, Store, StoreAd, Dashboard, Category, FoodType
+from instadash.models import User, Ad, Store, StoreAd, Dashboard, Category, FoodType, Item
 from django.http import JsonResponse
 from instadash.serializers import UserSerializer, RegisterSerializer, DashSerializer, AdSerializer, StoreSerializer, CategorySerializer, FoodTypeSerializer
 from rest_framework.permissions import AllowAny
@@ -86,15 +86,7 @@ def getSavedStores(request):
 @api_view(['GET'])
 def getStore(request):
     print("REQUEST PARAM", request.query_params.get('store_id'))
-    stores = Store.objects.filter(id=request.query_params.get(
-        'store_id')).prefetch_related('item_set')
-    serializer = StoreSerializer(stores, many=True)
-    return JsonResponse(serializer.data, safe=False)
-
-
-@api_view(['GET'])
-def getStoreItems(request):
-    # print("REQUEST PARAM", request.query_params.get('store_id'))
-    stores = Store.objects.all().prefetch_related('item_set')
+    stores = Store.objects.filter(id=request.query_params.get('store_id')).prefetch_related(
+        Prefetch('item_set', queryset=Item.objects.all().order_by('id')))
     serializer = StoreSerializer(stores, many=True)
     return JsonResponse(serializer.data, safe=False)
