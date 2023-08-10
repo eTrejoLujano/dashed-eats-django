@@ -27,6 +27,6 @@ urlpatterns = [
     path('api/foodtype/', views.getFoodType, name='foodtype'),
 
     path('api/store/', views.getStore, name='store'),
-
+    path('api/storecategory/', views.getCatergoryPick, name='category'),
 
 ]

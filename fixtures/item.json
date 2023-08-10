@@ -226,7 +226,7 @@
       "name": "Spicy Deluxe Sandwich",
       "prices": "8.79",
       "description": "A boneless breast of chicken seasoned with a spicy blend of peppers, hand-breaded, pressure cooked in 100% refined peanut oil and served on a toasted, buttered bun with dill pickle chips, green leaf lettuce, tomato and Pepper Jack Cheese. Gluten-free bun or multigrain bun also available at an additional cost.",
-      "image": "src/assets/item/chickfila_spicydeluxe",
+      "image": "src/assets/item/chickfila_spicydeluxe.png",
       "store_id": "4"
     }
   },
@@ -259,7 +259,7 @@
       "name": "Frosted Lemonade",
       "prices": "6.49",
       "description": "This refreshing treat is a hand-spun combination of Chick-fil-A® Lemonade (or Diet Lemonade) and our signature Icedream® dessert.",
-      "image": "src/assets/item/chickfila_frosted lemonade",
+      "image": "src/assets/item/chickfila_frostedlemonade.png",
       "store_id": "4"
     }
   },
@@ -336,7 +336,7 @@
       "name": "Whopper®",
       "prices": "9.69",
       "description": "A ¼ lb* of flame-grilled beef with juicy tomatoes, crisp lettuce, creamy mayonnaise, ketchup, crunchy pickles, and sliced white onions on a toasted sesame seed bun. *Weight based on pre-cooked patty.",
-      "image": "src/assets/item/burgerking_whopper.png",
+      "image": "src/assets/item/burgerking_whopper.jpeg",
       "store_id": "6"
     }
   },
@@ -358,7 +358,7 @@
       "name": "Impossible™ Whopper®",
       "prices": "10.89",
       "description": "A flame-grilled, plant-based patty with juicy tomatoes, crisp lettuce, creamy mayonnaise, ketchup, crunchy pickles, and sliced white onions on a toasted sesame seed bun. *Patty cooked on the same broiler as beef patties.",
-      "image": "src/assets/item/burgerking_impossible.jpeg",
+      "image": "src/assets/item/burgerking_impossible.webp",
       "store_id": "6"
     }
   },
@@ -424,7 +424,7 @@
       "name": "Jr. Jumbo Jack® Cheeseburger",
       "prices": "3.61",
       "description": "Anywhere else this Jr. Jack would be senior. Because there is nothing junior about this honest-to-goodness 100% beef patty seasoned as it grills topped with American cheese, tomato, pickle, lettuce, and chopped onions--with the just-right amount of ketchup and real mayonnaise. But here? It's got some growing up to do.",
-      "image": "src/assets/item/jack_jrjumbo.jpeg",
+      "image": "src/assets/item/jack_jrjumbo.webp",
       "store_id": "7"
     }
   },
@@ -435,7 +435,7 @@
       "name": "Jumbo Breakfast Platter w/ Bacon",
       "prices": "6.86",
       "description": "Scrambled eggs, hash browns, 8 mini pancakes, and 3 slices of hickory smoked bacon. Tell your stomach to make room. Pronto.",
-      "image": "src/assets/item/jack_breakfastplatter.jepg",
+      "image": "src/assets/item/jack_breakfastplatter.jpeg",
       "store_id": "7"
     }
   },
@@ -446,7 +446,7 @@
       "name": "Loaded Breakfast Sandwich",
       "prices": "6.99",
       "description": "Freshly cracked eggs, hickory smoked bacon, grilled ham, grilled sausage & melty American cheese on toasted sourdough bread. Boom, loaded.",
-      "image": "src/assets/item/jack_loadedbreakfast.jpeg",
+      "image": "src/assets/item/jack_loadedbreakfast.webp",
       "store_id": "7"
     }
   },
@@ -501,7 +501,7 @@
       "name": "Strawberry Banana Smoothie",
       "prices": "7.29",
       "description": "A mix of fruit purees and juice concentrates, blended with a banana and plain Greek yogurt and ice.",
-      "image": "src/assets/item/panera_strawsmoothie.jpeg",
+      "image": "src/assets/item/panera_strawsmoothie.avif",
       "store_id": "8"
     }
   },
@@ -1081,7 +1081,7 @@
     "fields": {
       "name": "Cathedral Creek California Cabernet Sauvignon",
       "prices": "6.79",
-      "image": "src/assets/item/grocery_wine.webp",
+      "image": "src/assets/item/grocery_wine.avif",
       "store_id": "17"
     }
   },

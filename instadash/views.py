@@ -85,8 +85,15 @@ def getSavedStores(request):
 
 @api_view(['GET'])
 def getStore(request):
-    print("REQUEST PARAM", request.query_params.get('store_id'))
     stores = Store.objects.filter(id=request.query_params.get('store_id')).prefetch_related(
         Prefetch('item_set', queryset=Item.objects.all().order_by('id')))
     serializer = StoreSerializer(stores, many=True)
+    return JsonResponse(serializer.data, safe=False)
+
+
+@api_view(['GET'])
+def getCatergoryPick(request):
+    stores = Category.objects.filter(id=request.query_params.get(
+        'category_id')).prefetch_related('storecategory_set')
+    serializer = CategorySerializer(stores, many=True)
     return JsonResponse(serializer.data, safe=False)
