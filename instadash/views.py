@@ -92,8 +92,16 @@ def getStore(request):
 
 
 @api_view(['GET'])
-def getCatergoryPick(request):
+def getCategoryPick(request):
     stores = Category.objects.filter(id=request.query_params.get(
         'category_id')).prefetch_related('storecategory_set')
     serializer = CategorySerializer(stores, many=True)
+    return JsonResponse(serializer.data, safe=False)
+
+
+@api_view(['GET'])
+def getFoodTypePick(request):
+    stores = FoodType.objects.filter(name=request.query_params.get(
+        'foodtype_name')).prefetch_related('storetype_set')
+    serializer = FoodTypeSerializer(stores, many=True)
     return JsonResponse(serializer.data, safe=False)
