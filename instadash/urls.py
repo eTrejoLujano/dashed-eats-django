@@ -29,4 +29,8 @@ urlpatterns = [
     path('api/store/', views.getStore, name='store'),
     path('api/storecategory/', views.getCategoryPick, name='category'),
     path('api/storetype/', views.getFoodTypePick, name='storetype'),
+
+    path('api/fastfood/', views.getFastFood, name='fastfood'),
+    path('api/restaurants/', views.getRestaurants, name='restaurants'),
+
 ]

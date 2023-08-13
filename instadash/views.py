@@ -1,5 +1,5 @@
 from instadash.models import User, Ad, Store, StoreAd, Dashboard, Category, FoodType, Item
-from django.http import JsonResponse
+from django.http import JsonResponse, HttpResponse
 from instadash.serializers import UserSerializer, RegisterSerializer, DashSerializer, AdSerializer, StoreSerializer, CategorySerializer, FoodTypeSerializer
 from rest_framework.permissions import AllowAny
 from rest_framework.generics import CreateAPIView
@@ -8,6 +8,8 @@ from rest_framework.decorators import api_view
 from rest_framework_simplejwt.serializers import TokenObtainPairSerializer
 from rest_framework_simplejwt.views import TokenObtainPairView
 from django.db.models import Prefetch
+import requests
+import os
 
 
 class MyTokenObtainPairSerializer(TokenObtainPairSerializer):
@@ -105,3 +107,25 @@ def getFoodTypePick(request):
         'foodtype_name')).prefetch_related('storetype_set')
     serializer = FoodTypeSerializer(stores, many=True)
     return JsonResponse(serializer.data, safe=False)
+
+
+@api_view(['GET'])
+def getRestaurants(request):
+    url = 'https://maps.googleapis.com/maps/api/place/textsearch/json?query=restuarants&key='
+    key = os.environ['GOOGLE_KEY']
+    url = url+key
+    payload = {}
+    headers = {}
+    response = requests.request("GET", url, headers=headers, data=payload)
+    return HttpResponse(response.text)
+
+
+@api_view(['GET'])
+def getFastFood(request):
+    url = 'https://maps.googleapis.com/maps/api/place/textsearch/json?query=fast%20food&key='
+    key = os.environ['GOOGLE_KEY']
+    url = url+key
+    payload = {}
+    headers = {}
+    response = requests.request("GET", url, headers=headers, data=payload)
+    return HttpResponse(response.text)
