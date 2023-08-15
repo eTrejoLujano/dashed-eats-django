@@ -94,6 +94,14 @@ def getStore(request):
 
 
 @api_view(['GET'])
+def getStorePickup(request):
+    stores = Store.objects.filter(name=request.query_params.get('store_name')).prefetch_related(
+        Prefetch('item_set', queryset=Item.objects.all().order_by('id')))
+    serializer = StoreSerializer(stores, many=True)
+    return JsonResponse(serializer.data, safe=False)
+
+
+@api_view(['GET'])
 def getCategoryPick(request):
     stores = Category.objects.filter(id=request.query_params.get(
         'category_id')).prefetch_related('storecategory_set')

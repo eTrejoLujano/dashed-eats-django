@@ -30,6 +30,7 @@ urlpatterns = [
     path('api/storecategory/', views.getCategoryPick, name='category'),
     path('api/storetype/', views.getFoodTypePick, name='storetype'),
 
+    path('api/storepickup/', views.getStorePickup, name='storepickup'),
     path('api/fastfood/', views.getFastFood, name='fastfood'),
     path('api/restaurants/', views.getRestaurants, name='restaurants'),
 

@@ -15,7 +15,7 @@
     "model": "instadash.store",
     "pk": 2,
     "fields": {
-      "name": "Mcdonald's",
+      "name": "McDonald's",
       "image": "src/assets/store/mcdonalds.jpeg",
       "logo": "src/assets/store/logo/mcdonaldslogo.avif",
       "open_time": "04:00:00",
