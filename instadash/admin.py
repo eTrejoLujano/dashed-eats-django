@@ -1,5 +1,5 @@
 from django.contrib import admin
-from instadash.models import User, Cart, Store, Item, Ad, StoreAd, SavedStore, FoodType, Category, Dashboard, StoreType, StoreCategory, StoreDashboard
+from instadash.models import User, Cart, Store, Item, Ad, StoreAd, SavedStore, FoodType, Category, Dashboard, StoreType, StoreCategory, StoreDashboard, Location
 
 admin.site.register(User)
 admin.site.register(Cart)

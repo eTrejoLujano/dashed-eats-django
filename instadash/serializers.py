@@ -1,6 +1,6 @@
 from rest_framework.serializers import ModelSerializer, EmailField, ValidationError, CharField
-from instadash.models import User, Ad, Store, FoodType, Item, Dashboard, Category, StoreAd, StoreDashboard, SavedStore, StoreCategory, StoreType
-from rest_framework.validators import UniqueValidator
+from instadash.models import User, Ad, Store, FoodType, Item, Dashboard, Category, StoreAd, StoreDashboard, SavedStore, StoreCategory, StoreType, Location
+from rest_framework.validators import UniqueValidator, UniqueTogetherValidator
 from django.contrib.auth.password_validation import validate_password
 
 
@@ -143,4 +143,10 @@ class FoodTypeSerializer(ModelSerializer):
 
     class Meta:
         model = FoodType
+        fields = '__all__'
+
+
+class LocationSerializer(ModelSerializer):
+    class Meta:
+        model = Location
         fields = '__all__'

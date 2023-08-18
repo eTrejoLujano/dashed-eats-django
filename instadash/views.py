@@ -1,6 +1,6 @@
-from instadash.models import User, Ad, Store, StoreAd, Dashboard, Category, FoodType, Item
+from instadash.models import User, Ad, Store, StoreAd, Dashboard, Category, FoodType, Item, Location
 from django.http import JsonResponse, HttpResponse
-from instadash.serializers import UserSerializer, RegisterSerializer, DashSerializer, AdSerializer, StoreSerializer, CategorySerializer, FoodTypeSerializer
+from instadash.serializers import UserSerializer, RegisterSerializer, DashSerializer, AdSerializer, StoreSerializer, CategorySerializer, FoodTypeSerializer, LocationSerializer
 from rest_framework.permissions import AllowAny
 from rest_framework.generics import CreateAPIView
 from rest_framework.response import Response
@@ -121,7 +121,11 @@ def getFoodTypePick(request):
 def getRestaurants(request):
     url = 'https://maps.googleapis.com/maps/api/place/textsearch/json?query=restuarants&key='
     key = os.environ['GOOGLE_KEY']
-    url = url+key
+    loc = '&location='
+    lat = request.query_params.get('latitude')
+    space = '%2C'
+    lng = request.query_params.get('longitude')
+    url = url+key+loc+lat+space+lng
     payload = {}
     headers = {}
     response = requests.request("GET", url, headers=headers, data=payload)
@@ -132,8 +136,30 @@ def getRestaurants(request):
 def getFastFood(request):
     url = 'https://maps.googleapis.com/maps/api/place/textsearch/json?query=fast%20food&key='
     key = os.environ['GOOGLE_KEY']
-    url = url+key
+    loc = '&location='
+    lat = request.query_params.get('latitude')
+    space = '%2C'
+    lng = request.query_params.get('longitude')
+    url = url+key+loc+lat+space+lng
     payload = {}
     headers = {}
     response = requests.request("GET", url, headers=headers, data=payload)
     return HttpResponse(response.text)
+
+
+@api_view(['GET'])
+def getAddress(request):
+    address = Location.objects.get_or_create(address=request.query_params.get(
+        'address'), user_id=request.query_params.get("user_id"), defaults={"latitude": request.query_params.get("latitude"),
+                                                                           "longitude": request.query_params.get("longitude"),
+                                                                           })
+    serializer = LocationSerializer(address[0])
+    return JsonResponse(serializer.data, safe=False)
+
+
+@api_view(['GET'])
+def getLatestAddress(request):
+    date = Location.objects.filter(user_id=request.query_params.get(
+        'user_id')).latest('date_accessed')
+    serializer = LocationSerializer(date)
+    return JsonResponse(serializer.data, safe=False)

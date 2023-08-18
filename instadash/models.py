@@ -94,6 +94,7 @@ class Category(models.Model):
 class Dashboard(models.Model):
     name = models.CharField(max_length=500)
     stores = models.ManyToManyField(Store, through="StoreDashboard")
+    forHome = models.BooleanField(default=True)
 
 
 class StoreType(models.Model):
@@ -108,4 +109,17 @@ class StoreCategory(models.Model):
 
 class StoreDashboard(models.Model):
     store = models.ForeignKey(Store, on_delete=models.CASCADE)
+    dashboard = models.ForeignKey(Dashboard, on_delete=models.CASCADE)
+
+
+class Location(models.Model):
+    address = models.CharField(max_length=4000, null=True)
+    longitude = models.DecimalField(max_digits=16, decimal_places=13)
+    latitude = models.DecimalField(max_digits=16, decimal_places=13)
+    date_accessed = models.DateTimeField(auto_now=True)
+    user = models.ForeignKey(User, on_delete=models.CASCADE)
+
+
+class CategoryDashboard(models.Model):
+    category = models.ForeignKey(Category, on_delete=models.CASCADE)
     dashboard = models.ForeignKey(Dashboard, on_delete=models.CASCADE)

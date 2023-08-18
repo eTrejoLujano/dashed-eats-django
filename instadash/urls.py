@@ -19,19 +19,17 @@ urlpatterns = [
     path('api/users/', views.users, name="users"),
     path('api/ads/', views.ads, name="ads"),
     path('api/routes/', views.getRoutes, name='routes'),
-
     path('api/storeads/', views.getStoreAds, name='storeads'),
     path('api/dashboard/', views.getDashStores, name='dashboard'),
-
     path('api/categories/', views.getCategories, name='categories'),
     path('api/foodtype/', views.getFoodType, name='foodtype'),
-
     path('api/store/', views.getStore, name='store'),
     path('api/storecategory/', views.getCategoryPick, name='category'),
     path('api/storetype/', views.getFoodTypePick, name='storetype'),
-
     path('api/storepickup/', views.getStorePickup, name='storepickup'),
     path('api/fastfood/', views.getFastFood, name='fastfood'),
     path('api/restaurants/', views.getRestaurants, name='restaurants'),
+    path('api/address/', views.getAddress, name='address'),
+    path('api/latestaddress/', views.getLatestAddress, name='latestaddress'),
 
 ]
