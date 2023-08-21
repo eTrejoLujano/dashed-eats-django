@@ -148,6 +148,36 @@ def getFastFood(request):
 
 
 @api_view(['GET'])
+def getCoffee(request):
+    url = 'https://maps.googleapis.com/maps/api/place/textsearch/json?query=coffee&key='
+    key = os.environ['GOOGLE_KEY']
+    loc = '&location='
+    lat = request.query_params.get('latitude')
+    space = '%2C'
+    lng = request.query_params.get('longitude')
+    url = url+key+loc+lat+space+lng
+    payload = {}
+    headers = {}
+    response = requests.request("GET", url, headers=headers, data=payload)
+    return HttpResponse(response.text)
+
+
+@api_view(['GET'])
+def getPizza(request):
+    url = 'https://maps.googleapis.com/maps/api/place/textsearch/json?query=pizza&key='
+    key = os.environ['GOOGLE_KEY']
+    loc = '&location='
+    lat = request.query_params.get('latitude')
+    space = '%2C'
+    lng = request.query_params.get('longitude')
+    url = url+key+loc+lat+space+lng
+    payload = {}
+    headers = {}
+    response = requests.request("GET", url, headers=headers, data=payload)
+    return HttpResponse(response.text)
+
+
+@api_view(['GET'])
 def getAddress(request):
     address = Location.objects.get_or_create(address=request.query_params.get(
         'address'), user_id=request.query_params.get("user_id"), defaults={"latitude": request.query_params.get("latitude"),
@@ -159,7 +189,35 @@ def getAddress(request):
 
 @api_view(['GET'])
 def getLatestAddress(request):
-    date = Location.objects.filter(user_id=request.query_params.get(
+    latest = Location.objects.filter(user_id=request.query_params.get(
         'user_id')).latest('date_accessed')
-    serializer = LocationSerializer(date)
+    serializer = LocationSerializer(latest)
+    return JsonResponse(serializer.data, safe=False)
+
+
+@api_view(['GET'])
+def getAllAddresses(request):
+    addresses = Location.objects.filter(user_id=request.query_params.get(
+        'user_id'))
+    serializer = LocationSerializer(addresses, many=True)
+    return JsonResponse(serializer.data, safe=False)
+
+
+@api_view(['GET'])
+def changeAddress(request):
+    address = Location.objects.filter(id=request.query_params.get(
+        'address_id'))
+    serializer = LocationSerializer(address, many=True)
+    return JsonResponse(serializer.data, safe=False)
+
+# @api_view(['DELETE'])
+
+
+@api_view(['GET'])
+def deleteAddress(request):
+    Location.objects.filter(id=request.query_params.get(
+        'address_id')).delete()
+    addresses = Location.objects.filter(user_id=request.query_params.get(
+        'user_id'))
+    serializer = LocationSerializer(addresses, many=True)
     return JsonResponse(serializer.data, safe=False)

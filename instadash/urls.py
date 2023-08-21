@@ -29,7 +29,12 @@ urlpatterns = [
     path('api/storepickup/', views.getStorePickup, name='storepickup'),
     path('api/fastfood/', views.getFastFood, name='fastfood'),
     path('api/restaurants/', views.getRestaurants, name='restaurants'),
+    path('api/coffee/', views.getCoffee, name='coffee'),
+    path('api/pizza/', views.getPizza, name='pizza'),
     path('api/address/', views.getAddress, name='address'),
     path('api/latestaddress/', views.getLatestAddress, name='latestaddress'),
+    path('api/alladdresses/', views.getAllAddresses, name='alladdresses'),
+    path('api/changeaddress/', views.changeAddress, name='changeaddress'),
+    path('api/deleteaddress/', views.deleteAddress, name='deleteaddress'),
 
 ]
