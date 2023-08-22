@@ -86,9 +86,24 @@ def getSavedStores(request):
 
 
 @api_view(['GET'])
-def getStore(request):
+def getStoreById(request):
     stores = Store.objects.filter(id=request.query_params.get('store_id')).prefetch_related(
         Prefetch('item_set', queryset=Item.objects.all().order_by('id')))
+    serializer = StoreSerializer(stores, many=True)
+    return JsonResponse(serializer.data, safe=False)
+
+
+@api_view(['GET'])
+def getStoreByName(request):
+    stores = Store.objects.filter(name=request.query_params.get('store_name')).prefetch_related(
+        Prefetch('item_set', queryset=Item.objects.all().order_by('id')))
+    serializer = StoreSerializer(stores, many=True)
+    return JsonResponse(serializer.data, safe=False)
+
+
+@api_view(['GET'])
+def getAllStores(request):
+    stores = Store.objects.all()
     serializer = StoreSerializer(stores, many=True)
     return JsonResponse(serializer.data, safe=False)
 
@@ -171,6 +186,36 @@ def getPizza(request):
     space = '%2C'
     lng = request.query_params.get('longitude')
     url = url+key+loc+lat+space+lng
+    payload = {}
+    headers = {}
+    response = requests.request("GET", url, headers=headers, data=payload)
+    return HttpResponse(response.text)
+
+
+@api_view(['GET'])
+def getDistance(request):
+    url = 'https://maps.googleapis.com/maps/api/distancematrix/json?destinations='
+    destinations = request.query_params.get('destinations')
+    originsParam = '&origins='
+    origins = request.query_params.get('origins')
+    units = "&units=imperial"
+    keyParam = '&key='
+    key = os.environ['GOOGLE_KEY']
+    url = url+destinations+originsParam+origins+units+keyParam+key
+    payload = {}
+    headers = {}
+    response = requests.request("GET", url, headers=headers, data=payload)
+    return HttpResponse(response.text)
+
+
+@api_view(['GET'])
+def getPlaceDetails(request):
+    url = 'https://maps.googleapis.com/maps/api/place/details/json?fields=name%2Crating%2Creviews%2Copening_hours%2Cgeometry%2Cformatted_address'
+    originsParam = '&place_id='
+    origins = request.query_params.get('place_id')
+    keyParam = '&key='
+    key = os.environ['GOOGLE_KEY']
+    url = url+originsParam+origins+keyParam+key
     payload = {}
     headers = {}
     response = requests.request("GET", url, headers=headers, data=payload)
