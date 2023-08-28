@@ -1,13 +1,13 @@
-from instadash.models import User, Ad, Store, StoreAd, Dashboard, Category, FoodType, Item, Location
+from instadash.models import User, Ad, Store, StoreAd, Dashboard, Category, FoodType, Item, Location, Cart
 from django.http import JsonResponse, HttpResponse
-from instadash.serializers import UserSerializer, RegisterSerializer, DashSerializer, AdSerializer, StoreSerializer, CategorySerializer, FoodTypeSerializer, LocationSerializer
+from instadash.serializers import UserSerializer, RegisterSerializer, DashSerializer, AdSerializer, StoreSerializer, CategorySerializer, FoodTypeSerializer, LocationSerializer, CartSerializer
 from rest_framework.permissions import AllowAny
 from rest_framework.generics import CreateAPIView
 from rest_framework.response import Response
 from rest_framework.decorators import api_view
 from rest_framework_simplejwt.serializers import TokenObtainPairSerializer
 from rest_framework_simplejwt.views import TokenObtainPairView
-from django.db.models import Prefetch
+from django.db.models import Prefetch, F
 import requests
 import os
 
@@ -265,4 +265,27 @@ def deleteAddress(request):
     addresses = Location.objects.filter(user_id=request.query_params.get(
         'user_id'))
     serializer = LocationSerializer(addresses, many=True)
+    return JsonResponse(serializer.data, safe=False)
+
+
+@api_view(['GET'])
+def getCart(request):
+    cart = Cart.objects.filter(user_id=request.query_params.get(
+        'user_id'))
+    serializer = CartSerializer(cart, many=True)
+    print("cart", serializer.data)
+    return JsonResponse(serializer.data, safe=False)
+
+
+@api_view(['POST'])
+def addCart(request):
+    Cart.objects.get_or_create(item_id=request.data.get(
+        'item_id'), user_id=request.data.get("user_id"),
+        defaults={"quantity": request.data.get("quantity")})
+    Cart.objects.filter(item_id=request.data.get(
+        'item_id'),
+        user_id=request.data.get("user_id")).update(
+        quantity=F('quantity') + request.data.get("quantity"))
+    returnCart = Cart.objects.filter(user_id=request.data.get("user_id"))
+    serializer = CartSerializer(returnCart, many=True)
     return JsonResponse(serializer.data, safe=False)

@@ -56,6 +56,7 @@ class Item(models.Model):
 class Cart(models.Model):
     user = models.ForeignKey(User, on_delete=models.CASCADE)
     item = models.ForeignKey(Item, on_delete=models.CASCADE)
+    quantity = models.IntegerField(default=0)
     isCart = models.BooleanField(default=True)
 
 
