@@ -56,17 +56,25 @@ class SavedStoreSerializer(ModelSerializer):
         fields = '__all__'
 
 
-class ItemSerializer(ModelSerializer):
-    class Meta:
-        model = Item
-        fields = '__all__'
-
-
 class SavedStoreSerializer(ModelSerializer):
     users_info = UserSerializer(source='user')
 
     class Meta:
         model = SavedStore
+        fields = '__all__'
+
+
+class SecondStoreSerializer(ModelSerializer):
+    class Meta:
+        model = Store
+        fields = '__all__'
+
+
+class ItemSerializer(ModelSerializer):
+    stores_info = SecondStoreSerializer(source='store')
+
+    class Meta:
+        model = Item
         fields = '__all__'
 
 
@@ -153,6 +161,8 @@ class LocationSerializer(ModelSerializer):
 
 
 class CartSerializer(ModelSerializer):
+    items_info = ItemSerializer(source='item')
+
     class Meta:
         model = Cart
         fields = '__all__'

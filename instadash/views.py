@@ -271,21 +271,55 @@ def deleteAddress(request):
 @api_view(['GET'])
 def getCart(request):
     cart = Cart.objects.filter(user_id=request.query_params.get(
-        'user_id'))
+        'user_id'), isCart=True).order_by('id')
     serializer = CartSerializer(cart, many=True)
-    print("cart", serializer.data)
     return JsonResponse(serializer.data, safe=False)
 
 
 @api_view(['POST'])
 def addCart(request):
+    print("called", request.data.get("quantity"))
     Cart.objects.get_or_create(item_id=request.data.get(
-        'item_id'), user_id=request.data.get("user_id"),
-        defaults={"quantity": request.data.get("quantity")})
+        'item_id'), user_id=request.data.get("user_id"), defaults={"place_id": request.data.get("place_id")})
     Cart.objects.filter(item_id=request.data.get(
         'item_id'),
+        isCart=True,
         user_id=request.data.get("user_id")).update(
         quantity=F('quantity') + request.data.get("quantity"))
-    returnCart = Cart.objects.filter(user_id=request.data.get("user_id"))
+    returnCart = Cart.objects.filter(
+        user_id=request.data.get("user_id"), isCart=True).order_by('id')
+    serializer = CartSerializer(returnCart, many=True)
+    return JsonResponse(serializer.data, safe=False)
+
+
+@api_view(['GET'])
+def deleteCart(request):
+    print("cart print", request.query_params)
+    Cart.objects.filter(id=request.query_params.get(
+        'cart_id')).delete()
+    cart = Cart.objects.filter(
+        user_id=request.query_params.get('user_id'), isCart=True).order_by('id')
+    serializer = CartSerializer(cart, many=True)
+    return JsonResponse(serializer.data, safe=False)
+
+
+@api_view(['GET'])
+def addOneCart(request):
+    theecart = Cart.objects.filter(id=request.query_params.get(
+        'cart_id')).update(quantity=F('quantity') + 1)
+    print("theee cart", theecart)
+    returnCart = Cart.objects.filter(
+        user_id=request.query_params.get("user_id"), isCart=True).order_by('id')
+    serializer = CartSerializer(returnCart, many=True)
+    return JsonResponse(serializer.data, safe=False)
+
+
+@api_view(['GET'])
+def minusOneCart(request):
+    Cart.objects.filter(id=request.query_params.get(
+        'cart_id')).update(
+        quantity=F('quantity') - 1)
+    returnCart = Cart.objects.filter(
+        user_id=request.query_params.get("user_id"), isCart=True).order_by('id')
     serializer = CartSerializer(returnCart, many=True)
     return JsonResponse(serializer.data, safe=False)

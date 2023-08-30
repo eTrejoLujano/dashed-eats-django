@@ -58,6 +58,7 @@ class Cart(models.Model):
     item = models.ForeignKey(Item, on_delete=models.CASCADE)
     quantity = models.IntegerField(default=0)
     isCart = models.BooleanField(default=True)
+    place_id = models.CharField(max_length=200, null=True)
 
 
 class Ad(models.Model):
