@@ -193,6 +193,51 @@ def getPizza(request):
 
 
 @api_view(['GET'])
+def getGrocery(request):
+    url = 'https://maps.googleapis.com/maps/api/place/textsearch/json?query=grocery&key='
+    key = os.environ['GOOGLE_KEY']
+    loc = '&location='
+    lat = request.query_params.get('latitude')
+    space = '%2C'
+    lng = request.query_params.get('longitude')
+    url = url+key+loc+lat+space+lng
+    payload = {}
+    headers = {}
+    response = requests.request("GET", url, headers=headers, data=payload)
+    return HttpResponse(response.text)
+
+
+@api_view(['GET'])
+def getDrugstore(request):
+    url = 'https://maps.googleapis.com/maps/api/place/textsearch/json?query=drugstore&key='
+    key = os.environ['GOOGLE_KEY']
+    loc = '&location='
+    lat = request.query_params.get('latitude')
+    space = '%2C'
+    lng = request.query_params.get('longitude')
+    url = url+key+loc+lat+space+lng
+    payload = {}
+    headers = {}
+    response = requests.request("GET", url, headers=headers, data=payload)
+    return HttpResponse(response.text)
+
+
+@api_view(['GET'])
+def getConvenience(request):
+    url = 'https://maps.googleapis.com/maps/api/place/textsearch/json?query=convenience&key='
+    key = os.environ['GOOGLE_KEY']
+    loc = '&location='
+    lat = request.query_params.get('latitude')
+    space = '%2C'
+    lng = request.query_params.get('longitude')
+    url = url+key+loc+lat+space+lng
+    payload = {}
+    headers = {}
+    response = requests.request("GET", url, headers=headers, data=payload)
+    return HttpResponse(response.text)
+
+
+@api_view(['GET'])
 def getDistance(request):
     url = 'https://maps.googleapis.com/maps/api/distancematrix/json?destinations='
     destinations = request.query_params.get('destinations')
@@ -251,7 +296,8 @@ def getAllAddresses(request):
 @api_view(['GET'])
 def changeAddress(request):
     address = Location.objects.filter(id=request.query_params.get(
-        'address_id'))
+        'address_id'), user_id=request.query_params.get(
+        'user_id'))
     serializer = LocationSerializer(address, many=True)
     return JsonResponse(serializer.data, safe=False)
 
