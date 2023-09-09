@@ -44,6 +44,13 @@ class Store(models.Model):
     expensive_rating = models.CharField(choices=expensive.choices)
 
 
+class OrderHistory(models.Model):
+    origin = models.CharField(max_length=4000, null=True)
+    destination = models.CharField(max_length=4000, null=True)
+    isDelivery = models.BooleanField(default=True)
+    date = models.DateTimeField(auto_now=True)
+
+
 class Item(models.Model):
     name = models.CharField(max_length=200)
     prices = models.DecimalField(max_digits=6, decimal_places=2)
@@ -57,7 +64,9 @@ class Cart(models.Model):
     user = models.ForeignKey(User, on_delete=models.CASCADE)
     item = models.ForeignKey(Item, on_delete=models.CASCADE)
     quantity = models.IntegerField(default=0)
-    isCart = models.BooleanField(default=True)
+    inCart = models.BooleanField(default=True)
+    order = models.ForeignKey(OrderHistory, null=True,
+                              on_delete=models.CASCADE)
     place_id = models.CharField(max_length=200, null=True)
 
 

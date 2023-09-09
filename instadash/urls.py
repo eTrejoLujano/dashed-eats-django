@@ -45,7 +45,9 @@ urlpatterns = [
     path('api/deleteaddress/', views.deleteAddress, name='deleteaddress'),
     path('api/getcart/', views.getCart, name='getcart'),
     path('api/addcart/', views.addCart, name='addcart'),
+    path('api/updatecart/', views.updateCart, name='updatecart'),
     path('api/deletecart/', views.deleteCart, name='deletecart'),
     path('api/addonecart/', views.addOneCart, name='addonecart'),
     path('api/minusonecart/', views.minusOneCart, name='minusonecart'),
+    path('api/createorder/', views.createOrder, name='createorder'),
 ]
