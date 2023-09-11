@@ -169,6 +169,7 @@ class CartSerializer(ModelSerializer):
 
 
 class OrderHistorySerializer(ModelSerializer):
+    cart = CartSerializer(source='cart_set', many=True)
 
     class Meta:
         model = OrderHistory

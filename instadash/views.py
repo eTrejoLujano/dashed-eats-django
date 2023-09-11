@@ -324,7 +324,6 @@ def getCart(request):
 
 @api_view(['POST'])
 def addCart(request):
-    print("called", request.data.get("quantity"))
     Cart.objects.get_or_create(item_id=request.data.get(
         'item_id'), user_id=request.data.get("user_id"), defaults={"place_id": request.data.get("place_id")})
     Cart.objects.filter(item_id=request.data.get(
@@ -340,7 +339,6 @@ def addCart(request):
 
 @api_view(['GET'])
 def deleteCart(request):
-    print("cart print", request.query_params)
     Cart.objects.filter(id=request.query_params.get(
         'cart_id')).delete()
     cart = Cart.objects.filter(
@@ -353,7 +351,6 @@ def deleteCart(request):
 def addOneCart(request):
     theecart = Cart.objects.filter(id=request.query_params.get(
         'cart_id')).update(quantity=F('quantity') + 1)
-    print("theee cart", theecart)
     returnCart = Cart.objects.filter(
         user_id=request.query_params.get("user_id"), inCart=True).order_by('id')
     serializer = CartSerializer(returnCart, many=True)
@@ -374,9 +371,15 @@ def minusOneCart(request):
 @api_view(['POST'])
 def createOrder(request):
     order = OrderHistory.objects.create(origin=request.data.get(
-        'origin'), destination=request.data.get(
-        'destination'), isDelivery=request.data.get(
-        'isDelivery'), )
+        'origin'), origin_lat=request.data.get(
+        'origin_lat'), origin_lng=request.data.get(
+        'origin_lng'), destination=request.data.get(
+        'destination'), destination_lat=request.data.get(
+        'destination_lat'), destination_lng=request.data.get(
+        'destination_lng'), isDelivery=request.data.get(
+        'isDelivery'), total=request.data.get(
+        'total'), totalQuantity=request.data.get(
+        'totalQuantity'))
     print("order", order.id)
     checkout = OrderHistory.objects.filter(id=order.id)
     serializer = OrderHistorySerializer(checkout, many=True)
@@ -391,3 +394,11 @@ def updateCart(request):
     # print("checkout", checkout)
     # serializer = CartSerializer(checkout, many=True)
     return Response("checked out")
+
+
+@api_view(['GET'])
+def getOrders(request):
+    cart = OrderHistory.objects.all().prefetch_related(
+        Prefetch('cart_set', queryset=Cart.objects.filter(user_id=request.query_params.get('user_id')))).order_by('-date')
+    serializer = OrderHistorySerializer(cart, many=True)
+    return JsonResponse(serializer.data, safe=False)

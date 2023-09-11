@@ -46,8 +46,18 @@ class Store(models.Model):
 
 class OrderHistory(models.Model):
     origin = models.CharField(max_length=4000, null=True)
+    origin_lat = models.DecimalField(
+        max_digits=16, decimal_places=13, null=True)
+    origin_lng = models.DecimalField(
+        max_digits=16, decimal_places=13, null=True)
     destination = models.CharField(max_length=4000, null=True)
+    destination_lat = models.DecimalField(
+        max_digits=16, decimal_places=13, null=True)
+    destination_lng = models.DecimalField(
+        max_digits=16, decimal_places=13, null=True)
     isDelivery = models.BooleanField(default=True)
+    total = models.DecimalField(max_digits=14, decimal_places=2, null=True)
+    totalQuantity = models.IntegerField(default=0, null=True)
     date = models.DateTimeField(auto_now=True)
 
 
