@@ -1,6 +1,6 @@
-from instadash.models import User, Ad, Store, StoreAd, Dashboard, Category, FoodType, Item, Location, Cart, OrderHistory
+from instadash.models import User, Ad, Store, StoreAd, Dashboard, Category, FoodType, Item, Location, Cart, OrderHistory, SavedStore
 from django.http import JsonResponse, HttpResponse
-from instadash.serializers import UserSerializer, RegisterSerializer, DashSerializer, AdSerializer, StoreSerializer, CategorySerializer, FoodTypeSerializer, LocationSerializer, CartSerializer, OrderHistorySerializer
+from instadash.serializers import UserSerializer, RegisterSerializer, DashSerializer, AdSerializer, StoreSerializer, CategorySerializer, FoodTypeSerializer, LocationSerializer, CartSerializer, OrderHistorySerializer, SavedStoreSerializer
 from rest_framework.permissions import AllowAny
 from rest_framework.generics import CreateAPIView
 from rest_framework.response import Response
@@ -303,8 +303,6 @@ def changeAddress(request):
     serializer = LocationSerializer(address, many=True)
     return JsonResponse(serializer.data, safe=False)
 
-# @api_view(['DELETE'])
-
 
 @api_view(['GET'])
 def deleteAddress(request):
@@ -351,7 +349,7 @@ def deleteCart(request):
 
 @api_view(['GET'])
 def addOneCart(request):
-    theecart = Cart.objects.filter(id=request.query_params.get(
+    Cart.objects.filter(id=request.query_params.get(
         'cart_id')).update(quantity=F('quantity') + 1)
     returnCart = Cart.objects.filter(
         user_id=request.query_params.get("user_id"), inCart=True).order_by('id')
@@ -382,7 +380,6 @@ def createOrder(request):
         'isDelivery'), total=request.data.get(
         'total'), totalQuantity=request.data.get(
         'totalQuantity'))
-    print("order", order.id)
     checkout = OrderHistory.objects.filter(id=order.id)
     serializer = OrderHistorySerializer(checkout, many=True)
     return JsonResponse(serializer.data, safe=False)
@@ -403,4 +400,62 @@ def getOrders(request):
     cart = OrderHistory.objects.all().prefetch_related(
         Prefetch('cart_set', queryset=Cart.objects.filter(user_id=request.query_params.get('user_id')))).order_by('-date')
     serializer = OrderHistorySerializer(cart, many=True)
+    return JsonResponse(serializer.data, safe=False)
+
+
+@api_view(['GET'])
+def deleteOrder(request):
+    OrderHistory.objects.filter(id=request.query_params.get(
+        'order_id')).delete()
+    cart = OrderHistory.objects.all().prefetch_related(
+        Prefetch('cart_set', queryset=Cart.objects.filter(user_id=request.query_params.get('user_id')))).order_by('-date')
+    serializer = OrderHistorySerializer(cart, many=True)
+    return JsonResponse(serializer.data, safe=False)
+
+
+@api_view(['GET'])
+def getSavedStores(request):
+    stores = SavedStore.objects.filter(user_id=request.query_params.get(
+        'user_id')).order_by('-date_saved')
+    serializer = SavedStoreSerializer(stores, many=True)
+    return JsonResponse(serializer.data, safe=False)
+
+
+@api_view(['GET'])
+def saveStore(request):
+    SavedStore.objects.create(user_id=request.query_params.get(
+        'user_id'), store_id=request.query_params.get('store_id'))
+    stores = SavedStore.objects.filter(user_id=request.query_params.get(
+        'user_id')).order_by('-date_saved')
+    serializer = SavedStoreSerializer(stores, many=True)
+    return JsonResponse(serializer.data, safe=False)
+
+
+@api_view(['GET'])
+def deleteSaveStore(request):
+    SavedStore.objects.filter(user_id=request.query_params.get(
+        'user_id'), store_id=request.query_params.get('store_id')).delete()
+    stores = SavedStore.objects.filter(user_id=request.query_params.get(
+        'user_id')).order_by('-date_saved')
+    serializer = SavedStoreSerializer(stores, many=True)
+    return JsonResponse(serializer.data, safe=False)
+
+
+@api_view(['POST'])
+def updateAccount(request):
+    if (request.data.get('email')):
+        User.objects.filter(id=request.data.get('user_id')).update(
+            first_name=request.data.get('first_name'), last_name=request.data.get('last_name'), email=request.data.get('email'))
+    else:
+        User.objects.filter(id=request.data.get('user_id')).update(
+            first_name=request.data.get('first_name'), last_name=request.data.get('last_name'))
+    # user = User.objects.filter(id=request.data.get('user_id'))
+    # serializer = UserSerializer(user, many=True)
+    return Response("updated")
+
+
+@api_view(['GET'])
+def getUser(request):
+    user = User.objects.filter(id=request.query_params.get('user_id'))
+    serializer = UserSerializer(user, many=True)
     return JsonResponse(serializer.data, safe=False)

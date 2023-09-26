@@ -98,6 +98,7 @@ class StoreAd(models.Model):
 class SavedStore(models.Model):
     store = models.ForeignKey(Store, on_delete=models.CASCADE)
     user = models.ForeignKey(User, on_delete=models.CASCADE)
+    date_saved = models.DateTimeField(auto_now=True)
 
 
 class FoodType(models.Model):

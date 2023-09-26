@@ -51,4 +51,10 @@ urlpatterns = [
     path('api/minusonecart/', views.minusOneCart, name='minusonecart'),
     path('api/createorder/', views.createOrder, name='createorder'),
     path('api/getorders/', views.getOrders, name='getorders'),
+    path('api/deleteorder/', views.deleteOrder, name='deleteorder'),
+    path('api/getsavedstores/', views.getSavedStores, name='getsavedstores'),
+    path('api/savestore/', views.saveStore, name='savestore'),
+    path('api/deletesavestore/', views.deleteSaveStore, name='deletesavestore'),
+    path('api/updateaccount/', views.updateAccount, name='updateaccount'),
+    path('api/getuser/', views.getUser, name='getuser'),
 ]
