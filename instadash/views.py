@@ -1,8 +1,8 @@
 from instadash.models import User, Ad, Store, StoreAd, Dashboard, Category, FoodType, Item, Location, Cart, OrderHistory, SavedStore
 from django.http import JsonResponse, HttpResponse
-from instadash.serializers import UserSerializer, RegisterSerializer, DashSerializer, AdSerializer, StoreSerializer, CategorySerializer, FoodTypeSerializer, LocationSerializer, CartSerializer, OrderHistorySerializer, SavedStoreSerializer
-from rest_framework.permissions import AllowAny
-from rest_framework.generics import CreateAPIView
+from instadash.serializers import UserSerializer, RegisterSerializer, ChangePasswordSerializer, DashSerializer, AdSerializer, StoreSerializer, CategorySerializer, FoodTypeSerializer, LocationSerializer, CartSerializer, OrderHistorySerializer, SavedStoreSerializer
+from rest_framework.permissions import AllowAny, IsAuthenticated
+from rest_framework.generics import CreateAPIView, UpdateAPIView
 from rest_framework.response import Response
 from rest_framework.decorators import api_view
 from rest_framework_simplejwt.serializers import TokenObtainPairSerializer
@@ -30,6 +30,13 @@ class RegisterView(CreateAPIView):
     queryset = User.objects.all()
     permission_classes = (AllowAny,)
     serializer_class = RegisterSerializer
+
+
+class ChangePasswordView(UpdateAPIView):
+
+    queryset = User.objects.all()
+    permission_classes = (IsAuthenticated,)
+    serializer_class = ChangePasswordSerializer
 
 
 @api_view(['GET'])

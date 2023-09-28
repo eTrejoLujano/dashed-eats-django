@@ -1,7 +1,7 @@
 from django.contrib import admin
 from django.urls import path
 from instadash import views
-from .views import MyTokenObtainPairView, RegisterView
+from .views import MyTokenObtainPairView, RegisterView, ChangePasswordView
 
 from rest_framework_simplejwt.views import (
     TokenRefreshView,
@@ -15,7 +15,8 @@ urlpatterns = [
     path('api/token/refresh/', TokenRefreshView.as_view(), name='token_refresh'),
 
     path('api/register/', RegisterView.as_view(), name='register'),
-
+    path('api/changepassword/<int:pk>/',
+         ChangePasswordView.as_view(), name='changepassword'),
     path('api/users/', views.users, name="users"),
     path('api/ads/', views.ads, name="ads"),
     path('api/routes/', views.getRoutes, name='routes'),
