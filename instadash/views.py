@@ -277,6 +277,20 @@ def getPlaceDetails(request):
 
 
 @api_view(['GET'])
+def getAddressCoordinates(request):
+    url = 'https://maps.googleapis.com/maps/api/geocode/json?'
+    originsParam = 'address='
+    origins = request.query_params.get('address')
+    keyParam = '&key='
+    key = os.environ['GOOGLE_KEY']
+    url = url+originsParam+origins+keyParam+key
+    payload = {}
+    headers = {}
+    response = requests.request("GET", url, headers=headers, data=payload)
+    return HttpResponse(response.text)
+
+
+@api_view(['GET'])
 def getAddress(request):
     address = Location.objects.get_or_create(address=request.query_params.get(
         'address'), user_id=request.query_params.get("user_id"), defaults={"latitude": request.query_params.get("latitude"),

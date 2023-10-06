@@ -40,6 +40,8 @@ urlpatterns = [
     path('api/distance/', views.getDistance, name='distance'),
     path('api/placedetails/', views.getPlaceDetails, name='placedetails'),
     path('api/address/', views.getAddress, name='address'),
+    path('api/addresscoordinates/', views.getAddressCoordinates,
+         name='addresscoordinates'),
     path('api/latestaddress/', views.getLatestAddress, name='latestaddress'),
     path('api/alladdresses/', views.getAllAddresses, name='alladdresses'),
     path('api/changeaddress/', views.changeAddress, name='changeaddress'),
