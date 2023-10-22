@@ -182,7 +182,7 @@ if 'RDS_DB_NAME' in os.environ:
             'NAME': os.environ['RDS_DB_NAME'],
             'USER': os.environ['RDS_USERNAME'],
             'PASSWORD': os.environ['RDS_PASSWORD'],
-            'HOST': 'dashed-eats-db.cujnym9h27u6.us-west-2.rds.amazonaws.com',
+            'HOST': 'dashedeats-db-deploy.cujnym9h27u6.us-west-2.rds.amazonaws.com',
             'PORT': 5432,
             'DISABLE_SERVER_SIDE_CURSORS': True,
         }
@@ -195,7 +195,7 @@ else:
             'NAME': env_vars['RDS_DB_NAME'],
             'USER': env_vars['RDS_USERNAME'],
             'PASSWORD': env_vars['RDS_PASSWORD'],
-            'HOST': 'dashed-eats-db.cujnym9h27u6.us-west-2.rds.amazonaws.com',
+            'HOST': 'dashedeats-db-deploy.cujnym9h27u6.us-west-2.rds.amazonaws.com',
             'PORT': 5432,
             'DISABLE_SERVER_SIDE_CURSORS': True,
         }
