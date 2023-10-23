@@ -4,7 +4,7 @@
     "pk": 1,
     "fields": {
       "name": "Convenience",
-      "image": "src/assets/category/convenience.png"
+      "image": "/assets/category/convenience.png"
     }
   },
   {
@@ -12,7 +12,7 @@
     "pk": 2,
     "fields": {
       "name": "Grocery",
-      "image": "src/assets/category/grocery.png"
+      "image": "/assets/category/grocery.png"
     }
   },
   {
@@ -20,7 +20,7 @@
     "pk": 3,
     "fields": {
       "name": "Alcohol",
-      "image": "src/assets/category/alcohol.png"
+      "image": "/assets/category/alcohol.png"
     }
   },
   {
@@ -28,7 +28,7 @@
     "pk": 4,
     "fields": {
       "name": "Pets",
-      "image": "src/assets/category/pets.png"
+      "image": "/assets/category/pets.png"
     }
   },
   {
@@ -36,7 +36,7 @@
     "pk": 5,
     "fields": {
       "name": "Shipping",
-      "image": "src/assets/category/shipping.png"
+      "image": "/assets/category/shipping.png"
     }
   },
   {
@@ -44,7 +44,7 @@
     "pk": 6,
     "fields": {
       "name": "Packages",
-      "image": "src/assets/category/packages.png"
+      "image": "/assets/category/packages.png"
     }
   },
   {
@@ -52,7 +52,7 @@
     "pk": 7,
     "fields": {
       "name": "Gifts",
-      "image": "src/assets/category/gifts.png"
+      "image": "/assets/category/gifts.png"
     }
   }
 ]

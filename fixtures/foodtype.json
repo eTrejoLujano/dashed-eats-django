@@ -4,7 +4,7 @@
     "pk": 1,
     "fields": {
       "name": "Fast Food",
-      "image": "src/assets/foodtype/fastFood.png"
+      "image": "/assets/foodtype/fastFood.png"
     }
   },
   {
@@ -12,7 +12,7 @@
     "pk": 2,
     "fields": {
       "name": "Mexican",
-      "image": "src/assets/foodtype/mexican.png"
+      "image": "/assets/foodtype/mexican.png"
     }
   },
   {
@@ -20,7 +20,7 @@
     "pk": 3,
     "fields": {
       "name": "Desserts",
-      "image": "src/assets/foodtype/dessert.png"
+      "image": "/assets/foodtype/dessert.png"
     }
   },
   {
@@ -28,7 +28,7 @@
     "pk": 4,
     "fields": {
       "name": "Chicken",
-      "image": "src/assets/foodtype/chicken.png"
+      "image": "/assets/foodtype/chicken.png"
     }
   },
   {
@@ -36,7 +36,7 @@
     "pk": 5,
     "fields": {
       "name": "Burgers",
-      "image": "src/assets/foodtype/burger.png"
+      "image": "/assets/foodtype/burger.png"
     }
   },
   {
@@ -44,7 +44,7 @@
     "pk": 6,
     "fields": {
       "name": "Soup",
-      "image": "src/assets/foodtype/soup.png"
+      "image": "/assets/foodtype/soup.png"
     }
   },
   {
@@ -52,7 +52,7 @@
     "pk": 7,
     "fields": {
       "name": "Snacks",
-      "image": "src/assets/foodtype/snack.png"
+      "image": "/assets/foodtype/snack.png"
     }
   },
   {
@@ -60,7 +60,7 @@
     "pk": 8,
     "fields": {
       "name": "Pizza",
-      "image": "src/assets/foodtype/pizza.png"
+      "image": "/assets/foodtype/pizza.png"
     }
   },
   {
@@ -68,7 +68,7 @@
     "pk": 9,
     "fields": {
       "name": "Drinks",
-      "image": "src/assets/foodtype/drinks.png"
+      "image": "/assets/foodtype/drinks.png"
     }
   },
   {
@@ -76,7 +76,7 @@
     "pk": 10,
     "fields": {
       "name": "Sandwiches",
-      "image": "src/assets/foodtype/sandwiches.png"
+      "image": "/assets/foodtype/sandwiches.png"
     }
   },
   {
@@ -84,7 +84,7 @@
     "pk": 11,
     "fields": {
       "name": "Smoothie",
-      "image": "src/assets/foodtype/smoothie.png"
+      "image": "/assets/foodtype/smoothie.png"
     }
   },
   {
@@ -92,7 +92,7 @@
     "pk": 12,
     "fields": {
       "name": "Coffee",
-      "image": "src/assets/foodtype/coffee.png"
+      "image": "/assets/foodtype/coffee.png"
     }
   },
   {
@@ -100,7 +100,7 @@
     "pk": 13,
     "fields": {
       "name": "Healthy",
-      "image": "src/assets/foodtype/healthy.png"
+      "image": "/assets/foodtype/healthy.png"
     }
   },
   {
@@ -108,7 +108,7 @@
     "pk": 14,
     "fields": {
       "name": "Breakfast",
-      "image": "src/assets/foodtype/breakfast.png"
+      "image": "/assets/foodtype/breakfast.png"
     }
   },
   {
@@ -116,7 +116,7 @@
     "pk": 15,
     "fields": {
       "name": "Salad",
-      "image": "src/assets/foodtype/salad.png"
+      "image": "/assets/foodtype/salad.png"
     }
   },
   {
@@ -124,7 +124,7 @@
     "pk": 16,
     "fields": {
       "name": "Italian",
-      "image": "src/assets/foodtype/italian.png"
+      "image": "/assets/foodtype/italian.png"
     }
   }
 ]
