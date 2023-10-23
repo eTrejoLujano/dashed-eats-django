@@ -51,7 +51,7 @@ SECRET_KEY = str(os.getenv('SECRET_KEY'))
 DEBUG = True
 
 ALLOWED_HOSTS = ['dashedeatsdjango.us-west-2.elasticbeanstalk.com',
-                 'react.dashedeatsdjango.com', '127.0.0.1', '10.0.23.180', '52.35.26.201']
+                 'react.dashedeatsdjango.com', '127.0.0.1']
 
 SECURE_CROSS_ORIGIN_OPENER_POLICY = None
 
