@@ -408,11 +408,8 @@ def createOrder(request):
 
 @api_view(['POST'])
 def updateCart(request):
-    print("request.data", request.data)
     Cart.objects.filter(user_id=request.data.get('user_id'),
                         item_id=request.data.get('item_id')).update(order_id=request.data.get('order_id'), inCart=False)
-    # print("checkout", checkout)
-    # serializer = CartSerializer(checkout, many=True)
     return Response("checked out")
 
 
