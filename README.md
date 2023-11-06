@@ -5,11 +5,11 @@ A food delivery web application built with Javascript and Python that gives user
 
 ## Project Overview
 ### Technologies Used
-- React: Used as the primary frontend library.
+- React: The primary frontend library.
 - Redux Toolkit: For state management.
-- Django: Used as the primary backend framework. 
+- Django: The primary backend framework. 
 - Tailwind CSS: Used to design the responsive user interface (UI).
-- Amazon Web Services: Used for deployment of the backend infrastructure 
+- Amazon Web Services: Used for the deployment of the backend infrastructure.
 
 ### Project's backend Structure 
 The project's codebase is organized as follows:
