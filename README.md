@@ -33,7 +33,7 @@ To run this project locally, follow these steps:
 9. Go to the settings.py file in the `instadash/` directory.
 10. Comment out lines 178-202 and comment in lines 166-176.
 11. Fill out your database information on lines 166-176.
-12. Start the development server with `npm run dev`.
+12. Start the development server with `python3 manage.py runserver`.
 
 This will launch the application locally for testing and development.
 
