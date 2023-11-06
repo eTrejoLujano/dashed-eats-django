@@ -4,21 +4,28 @@ A food delivery web application built with Javascript and Python that gives user
 [Frontend Repository](https://github.com/eTrejoLujano/dashed-eats-react)
 
 ## Project Overview
-### Technlogies Used
+### Technologies Used
 - React: Used as the primary frontend library.
 - Redux Toolkit: For state management.
 - Django: Used as the primary backend framework. 
 - Tailwind CSS: Used to design the responsive user interface (UI).
 - Amazon Web Services: Used for deployment of the backend infrastructure 
 
-### Project Structure 
+### Project's backend Structure 
 The project's codebase is organized as follows:
-- `src/`: This directory contains the source code for the project
-  - `Api`: Holds several different requests used to interact with the Django API.
-  - `components`: Various components used in the project.
-  - `redux-store`: The slices for redux toolkit's state management.
-  - `App.js`: The main application component.
-  - `main.js`: The entry point of the application.
+- `fixtures`: Holds all of the seed data for the project.
+- `manage.py`: The command-line utility for the Django project.
+- `instadash/`: This directory contains the source code for the project
+  - `__init__.py`: Holds several different requests used to interact with the Django API.
+  - `admin.py`: Various components used in the project.
+  - `asgi.py`: The slices for redux toolkit's state management.
+  - `managers.py`: The main application component.
+  - `models.py`: The entry point of the application.
+  - `serializers.py`: The entry point of the application.
+  - `settings.py`: The entry point of the application.
+  - `urls.py`: The entry point of the application.
+  - `views.py`: The entry point of the application.
+  - `wsgi.py`: The entry point of the application.
 
 ## Getting Started
 To run this project locally, follow these steps:
