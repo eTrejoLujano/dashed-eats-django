@@ -36,10 +36,10 @@ To run this project locally, follow these steps:
 6. Obtain a [Google Map API Key](#Google-Maps-API-Key) and generate a [Django secret key](https://djecrety.ir/).
 7. Create an `.env` file with variables `GOOGLE_KEY` set to the Google Map API Key and `SECRET_KEY` as the Django secret key.
 8. Create a database in your PostgreSQL environment on your machine.
-9. Go to the settings.py file in the `instadash/` directory.
+9. Go to the `settings.py` file in the `instadash/` directory.
 10. Comment out lines 178-202 and comment in lines 166-176.
 11. Fill out your database information on lines 166-176.
-12. Seed your database by using `python3 manage.py loaddata fixtures/[FILE]` for the files in the fixture folder in this order:
+12. Seed your database by using `python3 manage.py loaddata fixtures/[FILE]` in the fixtures folder in the following order:
     1. `store.json`
     2. `item.json`
     3. `category.json`
@@ -62,7 +62,7 @@ This will launch the application locally for testing and development.
 To obtain a Google Maps API Key for this project, follow these steps:
   1. Go to the [Google Developer Console](https://console.developers.google.com).
   2. Create a new project.
-  3. Manage API's and enable the following required Google Maps Platform APIs for this project:
+  3. Manage API's and enable the following required Google Maps Platform API's for this project:
      - Maps JavaScript API
      - Address Validation API
      - Geocoding API
