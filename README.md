@@ -15,12 +15,12 @@ A food delivery web application built with Javascript and Python that gives user
 The project's codebase is organized as follows:
 - `fixtures`: Holds all of the seed data for the project.
 - `manage.py`: The command-line utility for the Django project.
-- `instadash/`: This directory contains the source code for the project
+- `instadash/`: This directory contains the source code for the project.
   - `admin.py`: Displays the models in the Django admin panel.
   - `asgi.py`: Asynchronous gateway interface (ASGI) configurations for the Django project.
   - `managers.py`: The modifications for the user model.
-  - `models.py`: Holds the models for the database schema.
-  - `serializers.py`: Classes responsible for converting objects into Python data types that can be rendered into JSON for our frontend.
+  - `models.py`: The models for the database schema.
+  - `serializers.py`: Classes responsible for converting objects into Python data types that can be rendered into JSON types.
   - `settings.py`: The stored configuration information.
   - `urls.py`: The routing information for web requests.
   - `views.py`: Functions that determine what the application does based on the URL.
@@ -48,7 +48,9 @@ To run this project locally, follow these steps:
     6. `storecategory.json`
     7. `storedashboard.json`
     8. `storetype.json`
-13. Start the development server with `python3 manage.py runserver`.
+13. Create database migration files with `python3 manage.py makemigrations instadash`.
+14. Apply migration files with `python3 manage.py migrate`.
+15. Start the development server with `python3 manage.py runserver`.
 
 This will launch the application locally for testing and development.
 
