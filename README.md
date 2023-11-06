@@ -27,7 +27,7 @@ To run this project locally, follow these steps:
 3. Create a virtual environment.
 4. Activate your virtual environment, if not already activated.
 5. Install the required dependies using `pip install -r requirements.txt`.
-6. Obtain a [Google Map API Key](#Google-Maps-API-Key) and [generate](https://djecrety.ir/) a Django secret key.
+6. Obtain a [Google Map API Key](#Google-Maps-API-Key) and generate a [Django secret key](https://djecrety.ir/).
 7. Create an `.env` file with `GOOGLE_KEY` set to the Google Map API Key and `SECRET_KEY` as the Django secret key.
 8. Create a database in your PostgreSQL environment on your machine.
 9. Go to the settings.py file in the `instadash/` directory.
