@@ -1,17 +1,17 @@
 # Dashed Eats
 A food delivery web application built with Javascript and Python that gives users the power to conveniently order groceries and meals from any location via the Google Maps API.
 
-[Frontend Repository](https://github.com/eTrejoLujano/dashed-eats-react)
+[Front end Repository](https://github.com/eTrejoLujano/dashed-eats-react)
 
 ## Project Overview
 ### Technologies Used
-- React: The primary frontend library.
+- React: The primary front end library.
 - Redux Toolkit: For state management.
-- Django: The primary backend framework. 
+- Django: The primary back end framework. 
 - Tailwind CSS: Used to design the responsive user interface (UI).
-- Amazon Web Services: Used for the deployment of the backend infrastructure.
+- Amazon Web Services: Used for the deployment of the back end infrastructure.
 
-### Project's backend Structure 
+### Project's back end Structure 
 The project's codebase is organized as follows:
 - `fixtures`: Holds all of the seed data for the project.
 - `manage.py`: The command-line utility for the Django project.
