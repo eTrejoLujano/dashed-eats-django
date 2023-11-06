@@ -37,8 +37,7 @@ To run this project locally, follow these steps:
 
 This will launch the application locally for testing and development.
 
-## Functionality of the App
-### Database Schema
+## Database Schema
 
 ![Screenshot 2023-11-05 at 11 30 20 PM](https://github.com/eTrejoLujano/dashed-eats-django/assets/85711028/b2b56a8b-df9c-4ab7-9848-aeb9a328ae48)
 
