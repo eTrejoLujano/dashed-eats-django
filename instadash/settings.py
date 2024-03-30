@@ -16,6 +16,7 @@ import mimetypes
 from datetime import timedelta
 from pathlib import Path
 import os
+import dj_database_url
 
 from dotenv import load_dotenv
 load_dotenv()
@@ -175,31 +176,51 @@ WSGI_APPLICATION = 'instadash.wsgi.application'
 #     }
 # }
 
-if 'RDS_DB_NAME' in os.environ:
-    DATABASES = {
-        'default': {
-            'ENGINE': 'django.db.backends.postgresql_psycopg2',
-            'NAME': os.environ['RDS_DB_NAME'],
-            'USER': os.environ['RDS_USERNAME'],
-            'PASSWORD': os.environ['RDS_PASSWORD'],
-            'HOST': 'dashedeats-db-deploy.cujnym9h27u6.us-west-2.rds.amazonaws.com',
-            'PORT': 5432,
-            'DISABLE_SERVER_SIDE_CURSORS': True,
-        }
-    }
-else:
-    env_vars = get_environ_vars()
-    DATABASES = {
-        'default': {
-            'ENGINE': 'django.db.backends.postgresql_psycopg2',
-            'NAME': env_vars['RDS_DB_NAME'],
-            'USER': env_vars['RDS_USERNAME'],
-            'PASSWORD': env_vars['RDS_PASSWORD'],
-            'HOST': 'dashedeats-db-deploy.cujnym9h27u6.us-west-2.rds.amazonaws.com',
-            'PORT': 5432,
-            'DISABLE_SERVER_SIDE_CURSORS': True,
-        }
-    }
+DATABASES = {
+    'default': dj_database_url.config(
+        default=os.environ['DB_LINK'],
+        conn_max_age=600,
+        conn_health_checks=True,
+    )
+}
+
+# DATABASES = {
+#     'default': {
+#         'ENGINE': 'django.db.backends.postgresql_psycopg2',
+#         'NAME': os.environ['DB_NAME'],
+#         'USER': os.environ['DB_USERNAME'],
+#         'PASSWORD': os.environ['DB_PASSWORD'],
+#         'HOST': os.environ['DB_HOST'],
+#         'PORT': 5432,
+#         'DISABLE_SERVER_SIDE_CURSORS': True,
+#     }
+# }
+
+# if 'RDS_DB_NAME' in os.environ:
+#     DATABASES = {
+#         'default': {
+#             'ENGINE': 'django.db.backends.postgresql_psycopg2',
+#             'NAME': os.environ['RDS_DB_NAME'],
+#             'USER': os.environ['RDS_USERNAME'],
+#             'PASSWORD': os.environ['RDS_PASSWORD'],
+#             'HOST': 'dashedeats-db-deploy.cujnym9h27u6.us-west-2.rds.amazonaws.com',
+#             'PORT': 5432,
+#             'DISABLE_SERVER_SIDE_CURSORS': True,
+#         }
+#     }
+# else:
+#     env_vars = get_environ_vars()
+#     DATABASES = {
+#         'default': {
+#             'ENGINE': 'django.db.backends.postgresql_psycopg2',
+#             'NAME': env_vars['RDS_DB_NAME'],
+#             'USER': env_vars['RDS_USERNAME'],
+#             'PASSWORD': env_vars['RDS_PASSWORD'],
+#             'HOST': 'dashedeats-db-deploy.cujnym9h27u6.us-west-2.rds.amazonaws.com',
+#             'PORT': 5432,
+#             'DISABLE_SERVER_SIDE_CURSORS': True,
+#         }
+#     }
 
 
 # Password validation
