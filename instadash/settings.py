@@ -54,6 +54,8 @@ DEBUG = True
 ALLOWED_HOSTS = ['dashedeatsdjango.us-west-2.elasticbeanstalk.com',
                  'react.dashedeatsdjango.com', '127.0.0.1', 'dashed-eats-django.onrender.com']
 
+CSRF_TRUSTED_ORIGINS = ['https://dashed-eats-django.onrender.com']
+
 SECURE_CROSS_ORIGIN_OPENER_POLICY = None
 
 SESSION_COOKIE_SECURE = False
