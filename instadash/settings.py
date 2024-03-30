@@ -52,7 +52,7 @@ SECRET_KEY = str(os.getenv('SECRET_KEY'))
 DEBUG = True
 
 ALLOWED_HOSTS = ['dashedeatsdjango.us-west-2.elasticbeanstalk.com',
-                 'react.dashedeatsdjango.com', '127.0.0.1']
+                 'react.dashedeatsdjango.com', '127.0.0.1', 'dashed-eats-django.onrender.com']
 
 SECURE_CROSS_ORIGIN_OPENER_POLICY = None
 
